@@ -5,28 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="home.css">
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Roboto:wght@100&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura:wght@300;400&family=Roboto:wght@100&family=Silkscreen&family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    <div id="nav-placeholder">
-
-    </div>
     
+    <section id="me">
+    
+        <div id="nav-placeholder"></div>
+        <div class = "container">
+            <h1 id = "name">Jessie Su </h1>
+            <h2 id = "title">Junior Software Engineer</h2>
+            <div id ="icons">
+                <div id="github">
+                    <a href="https://github.com/JessieSu2" target="_blank">
+                        <img src="/images/arcticons_github.png" alt="Github">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/jessiesu01/" target="_blank">
+                        <img src="/images/akar-icons_linkedin-box-fill.png" alt="Linkedin">
+                    </a>
+                </div>
+                <div>
+                    <img src="/images/carbon_email.png" alt="Jessiesu3@gmail.com">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section>
         <h1>Latest Projects</h1>
-         <ul>
+        <ul>
             <li><a href="https://www.youtube.com/watch?v=vSUM_U1Rjfk&ab_channel=Jessie">Coffee Run</a></li>
             <li><a href="https://www.youtube.com/watch?v=uMG2iKQ3erE&ab_channel=Jessie">Magical Walk</a></li>
             <li><a href="https://www.youtube.com/watch?v=8y-iWIHSUsE&ab_channel=Jessie">Mini-Might</a></li>
-         </ul>
+        </ul>
     </section>
     <script>
         $(function(){
-          $("#nav-placeholder").load("navbar.html");
+        $("#nav-placeholder").load("navbar.html");
         });
     </script>
-    
 </body>
 </html>
