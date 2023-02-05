@@ -1,21 +1,8 @@
-/* Section */
-section{
-    height: 500px;
-    background-color: yellow;
-    border: solid black 1px;
+.background{
+    background: linear-gradient(#64c8e6, #9198e5);
+    /* background-image:url(../images/stars.svg); */
 }
-
-/* Section 1 Name etc */
-#me{
-    background-image: url('/images/background.jpg') ;
-    background-size:cover;
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center center;
-
-
-}
-
+ 
 #name{
     text-align: center;
     margin-top: 15%;
@@ -42,21 +29,16 @@ section{
 
 #icons{
     display: flex;
-}
-.github{
     text-align: center;
+    justify-content: center;
 }
-
 
 .container{
     position: absolute;
     left:0;
     top:0;
     width:100%;
-    height:100%;
 }
 
-.containerContent{
-    background-image: url('/images/background.jpg');
-
+.projects{
 }
