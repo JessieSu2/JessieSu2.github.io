@@ -21,7 +21,6 @@ function HomePage() {
         <ParallaxLayer>
           <div id="me">
             <NavBar />
-
             <div className="container">
               <h1 id="name">Jessie Su </h1>
               <h2 id="title">Junior Software Engineer</h2>
@@ -59,7 +58,6 @@ function HomePage() {
 
 
       </Parallax>
-
 
 
       </div>

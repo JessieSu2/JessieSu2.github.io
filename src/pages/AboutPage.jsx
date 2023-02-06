@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "./NavBar";
 
 function AboutPage() {
   return (
@@ -9,9 +10,8 @@ function AboutPage() {
       <title>About Me</title>
       <link rel="stylesheet" href="Navbar.css" />
       <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Roboto:wght@100&family=Space+Mono&display=swap" rel="stylesheet" />
-      <div id="nav-placeholder">
-      </div>
-      Hi
+      <NavBar/>
+      aboutme
     </div>
   );
 }
