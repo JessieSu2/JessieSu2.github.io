@@ -1,7 +1,7 @@
 import './App.css';
 import HomePage from './pages/HomePage.jsx'
 import React from 'react';
-import { BrowserRouter, createBrowserRouter, createRoutesFromElements, RouterProvider,Route } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, RouterProvider,Route } from 'react-router-dom';
 import AboutPage from './pages/AboutPage';
 import HobbyPage from './pages/HobbyPage';
 import NoPage from './pages/NoPage';
