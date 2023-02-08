@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/homePage.css';
+import '../css/HomePage.css';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import stars from '../images/stars.svg';
 import NavBar from "./NavBar";
@@ -25,17 +25,17 @@ function HomePage() {
               <h1 id="name">Jessie Su </h1>
               <h2 id="title">Junior Software Engineer</h2>
               <div id="icons">
-                <div id="github">
+                <div className="icon-spacing">
                   <a href="https://github.com/JessieSu2" target="_blank" rel="noopener noreferrer">
                     <img src={require("../images/arcticons_github.png")} alt="Github" />
                   </a>
                 </div>
-                <div>
+                <div className="icon-spacing">
                   <a href="https://www.linkedin.com/in/jessiesu01/" target="_blank" rel="noopener noreferrer">
                     <img src={require("../images/akar-icons_linkedin-box-fill.png")} alt="Linkedin" />
                   </a>
                 </div>
-                <div>
+                <div className="icon-spacing">
                   <a href="mailto:jessiesu3@gmail.com">
                     <img src={require("../images/carbon_email.png")} alt="Jessiesu3@gmail.com" />
                   </a>

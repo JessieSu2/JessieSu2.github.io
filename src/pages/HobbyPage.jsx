@@ -10,8 +10,10 @@ function HobbyPage() {
       <link rel="stylesheet" href="Navbar.css" />
       <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Roboto:wght@100&family=Space+Mono&display=swap" rel="stylesheet" />
       <title>Hobbies</title>
-      <NavBar/>
-      Hoobies
+      <div id="background">
+        <NavBar/>
+        Hoobies
+      </div>
     </div>
   );
 }
