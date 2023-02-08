@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
-
+impor
 function HobbyPage() {
   return (
     <div>
