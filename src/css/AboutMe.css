@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura:wght@300;400&family=Roboto:wght@100&family=Silkscreen&family=Space+Mono&display=swap');
+
+
 .background{
     background: linear-gradient(#64c8e6, #9198e5);
     /* background-image:url(../images/stars.svg); */
     height: 100vh
 }
 
+
 .image{
+    font-family: 'Jura';
+    padding: 10px 0px;
+    width: 75vw;
     text-align: center;
 }
 
 
-.aboutme{
+#aboutme{
+    font-family: 'Jura';
     position: relative;
     justify-content: center;
     padding: 10px 50px;
     background-color: rgb(255,255,255, 0.3);
-    width: 100vh;
+    width: 75vw;
     border-radius: 25px;
 }

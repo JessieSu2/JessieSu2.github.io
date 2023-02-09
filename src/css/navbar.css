@@ -1,3 +1,6 @@
+ @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura:wght@300;400&family=Roboto:wght@100&family=Silkscreen&family=Space+Mono&display=swap');
+
+
 *{
     box-sizing:border-box;
     margin: 0;
@@ -11,34 +14,25 @@
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    position: sticky;
-    z-index: 100;
 }
 
  .navbarContainer{
     display: flex;
     justify-content: space-between;
-    height: 80px;
-    z-index: 1;
     width: 100%;
-    margin: 0px auto;
     padding: 0px 50px;
 }
 .navbarMenu{
     display: flex;
-    align-items: center;
     list-style: none;
-    text-align: center;
+}
+
+.navbarItem{
+    padding: 0px 10px;
 }
 
 .nav-link{
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
+    color: white !important;
 }
 
 .nav-link:hover{

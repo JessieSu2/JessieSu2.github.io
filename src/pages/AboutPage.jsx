@@ -9,17 +9,15 @@ function AboutPage() {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>About Me</title>
-      <link rel="stylesheet" href="Navbar.css" />
-      <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Roboto:wght@100&family=Space+Mono&display=swap" rel="stylesheet" />
       
       <div className="background">
         <NavBar/>
         <div className="intro">
-          <div className="image">
+          <div className="image mx-auto">
             image place holder
           </div>
           
-          <div className="aboutme">
+          <div id="aboutme" className="mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
         </div>

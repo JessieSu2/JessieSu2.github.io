@@ -7,7 +7,6 @@ function HomePage() {
   return (
     
     <div>
-      <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura:wght@300;400&family=Roboto:wght@100&family=Silkscreen&family=Space+Mono&display=swap" rel="stylesheet" />
       <Parallax pages={2} className="background">
         <ParallaxLayer 
         offset={0} 
