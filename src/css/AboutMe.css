@@ -1,0 +1,19 @@
+.background{
+    background: linear-gradient(#64c8e6, #9198e5);
+    /* background-image:url(../images/stars.svg); */
+    height: 100vh
+}
+
+.image{
+    text-align: center;
+}
+
+
+.aboutme{
+    position: relative;
+    justify-content: center;
+    padding: 10px 50px;
+    background-color: rgb(255,255,255, 0.3);
+    width: 100vh;
+    border-radius: 25px;
+}
