@@ -10,7 +10,7 @@ function HomePage() {
     
     <div style={{ width: '100%', height: '100%'}}>
       
-      <Parallax pages={2} className="background">
+      <Parallax pages={2.5} className="background">
        
 
         <ParallaxLayer 
@@ -65,38 +65,76 @@ function HomePage() {
 
         <ParallaxLayer offset={1.25} speed={0.8}>
           <div className="projects">
-            <h1 className="project-title mx-auto">Latest Projects</h1>
-            <ul className="project-links-ul">              
+            <h1 className="project-title-section mx-auto">Latest Projects</h1>
+            <ul className="project-links-ul">          
+
               <li className="project-links mx-auto">
-                <div>Easy Trader</div>
-                <a href="https://github.com/JessieSu2" target="_blank" rel="noopener noreferrer">
-                  <Icon icon="uit:github-alt" color="white" width="40" height="40" />
-                </a>
-                <a href="https://github.com/JessieSu2" target="_blank" rel="noopener noreferrer">
-                  <Icon icon="ph:youtube-logo-thin" color="white" width="48" height="48" />
-
-
-                </a>
+                <div className="project-container">
+                    <div className="projects-title">Easy Trader</div>
+                    <a href="https://github.com/jingshiliu/easy-trader-ctp" target="_blank" rel="noopener noreferrer" className="project-icon-a">
+                      <Icon icon="uit:github-alt"  className="projects-icon"/>
+                    </a>
+                </div>
               </li>
 
               <li className="project-links mx-auto">
-                <a href="" className="project-links-a">OneBite</a>
+                <div className="project-container">
+                  <div className="projects-title">One Bite</div>
+                  <a href="https://github.com/JessieSu2/CSC322-OneBite" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                    <Icon icon="uit:github-alt"  className="projects-icon"/>
+                  </a>
+                </div>
+
               </li>
 
               <li className="project-links mx-auto">
-                <a href="https://www.youtube.com/watch?v=vSUM_U1Rjfk&ab_channel=Jessie" className="project-links-a">Coffee Run</a>
+                <div className="project-container">
+                  <div className="projects-title">Coffee Run</div>
+                  <a href="https://github.com/JessieSu2/CoffeeRun_Game" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                    <Icon icon="uit:github-alt"  className="projects-icon"/>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=vSUM_U1Rjfk&ab_channel=Jessie" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                    <Icon icon="ph:youtube-logo-thin"  className="projects-icon"/>
+                  </a>
+                </div>
+                
               </li>
 
               <li className="project-links mx-auto">
-                <a href="https://www.youtube.com/watch?v=uMG2iKQ3erE&ab_channel=Jessie" className="project-links-a">Magical Walk</a>
+                <div className="project-container">
+                <div className="projects-title">Magical Walk</div>
+                  <a href="https://github.com/JessieSu2/MagicalWalk" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                    <Icon icon="uit:github-alt"  className="projects-icon"/>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=uMG2iKQ3erE&ab_channel=Jessie" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                    <Icon icon="ph:youtube-logo-thin"  className="projects-icon"/>
+                  </a>
+                </div>
+                
               </li>
 
               <li className="project-links mx-auto">
-                <a href="https://www.youtube.com/watch?v=8y-iWIHSUsE&ab_channel=Jessie" className="project-links-a">Mini-Might</a>
+                <div className="project-container">
+                  <div className="projects-title">Mini-Might</div>  
+                  <div className="project-icon-container">
+                    <a href="https://github.com/JessieSu2/Mini-Might" target="_blank" rel="noopener noreferrer" className="project-icon-container" >
+                      <Icon icon="uit:github-alt" className="projects-icon"/>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=8y-iWIHSUsE&ab_channel=Jessie" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                      <Icon icon="ph:youtube-logo-thin" className="projects-icon"/>
+                    </a>
+                  </div>
+                </div>
               </li>
                 
               <li className="project-links mx-auto">
-                <a href="" className="project-links-a">Toodaloo</a>
+                <div className="project-container">
+                  <div className="projects-title">Toodaloo</div>
+                     <a href="https://github.com/too-da-loo/toodaloo" target="_blank" rel="noopener noreferrer" className="project-icon-container"> 
+                      <Icon icon="uit:github-alt" className="projects-icon"/>
+                    </a>
+                </div>
+
               </li>
 
             </ul>
