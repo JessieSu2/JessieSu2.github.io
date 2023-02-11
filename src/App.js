@@ -7,6 +7,7 @@ import HobbyPage from './pages/HobbyPage';
 import NoPage from './pages/NoPage';
 
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>

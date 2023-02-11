@@ -18,11 +18,11 @@ function NavBar() {
             {/* <Link className="nav-link" to="/AboutMe">About Me</Link> */}
           </li>
           <li className="navbarItem">
-            <Link className="nav-link" to="/AboutMe">About Me</Link>
+            {/* <Link className="nav-link" to="/AboutMe">About Me</Link> */}
             {/* <a className="nav-link" href="aboutme.html">About Me</a> */}
           </li>
           <li className="navbarItem">
-            <Link className="nav-link" to="/Hobbies">Hobbies</Link>
+            {/* <Link className="nav-link" to="/Hobbies">Hobbies</Link> */}
             {/* <a className="nav-link" href="hobbies.html">Hobbies</a> */}
           </li>
         </ul>

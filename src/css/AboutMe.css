@@ -21,7 +21,7 @@
     position: relative;
     justify-content: center;
     padding: 10px 50px;
-    background-color: rgb(255,255,255, 0.3);
+    background-color: rgb(255,255,255, 0.25);
     width: 75vw;
     border-radius: 25px;
 }
