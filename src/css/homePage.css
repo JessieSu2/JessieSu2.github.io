@@ -13,7 +13,7 @@
 
 #name{
     text-align: center;
-    font-size: 120px;
+    font-size: 100px;
     font-family: 'Jura';
     font-style: normal;
     font-weight: 400;
@@ -80,32 +80,36 @@
 
 .project-links-ul{
     padding: 0;
+    
 }
 
 .project-links{
     list-style: none;
     padding: 40px;
-    justify-content: center;
-    text-align: center;
+    display: inline-block;
     
 }
 
 .projects-title{
     font-size: 35px;
-    padding-bottom: 20px;
+    padding: 0px 15px;
 }
 
 .project-container{    
-    display: inline-block;
     font-family: 'Jura';
     border-radius: 50px;
     padding: 50px;
-    width:400px;
+    width:700px;
     background-color: rgb(255,255,255,0.25);
 }
 
+.project-container .title-icon-container{
+    display: flex;
+    justify-content: center;
+}
+
 .projects-icon{
-    font-size: 3.5em;
+    font-size: 4em;
     color: azure;
     -webkit-transform: perspective(1px), translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -113,7 +117,9 @@
 
 .project-icon-container{
     padding: 0px 15px;
+    
 }
+
 
 @-webkit-keyframes bob{
     0%{
@@ -183,16 +189,16 @@
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     #name{
-        font-size: 80px;
+        font-size: 100px;
     }
 
     .what-do{
-        font-size: 15px;
+        font-size: 25px;
         letter-spacing: 1px;
         word-spacing: 0px;
-        line-height: 20px;
+        line-height: 40px;
     }
 
     .project-title{
@@ -200,10 +206,8 @@
 
     }
 
-    .project-links-a{
-        display: inline-block;
-        font-size: 15px;
-        width: 150px;
+    .project-container{
+        width: 500px;
     }
 
 

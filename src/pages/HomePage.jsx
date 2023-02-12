@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/HomePage.css';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { Parallax, ParallaxLayer} from '@react-spring/parallax'
 import stars from '../images/stars.svg';
 import NavBar from "./NavBar";
 import { Icon } from '@iconify/react';
@@ -70,71 +70,143 @@ function HomePage() {
 
               <li className="project-links mx-auto">
                 <div className="project-container">
+                  <div className="title-icon-container">
                     <div className="projects-title">Easy Trader</div>
-                    <a href="https://github.com/jingshiliu/easy-trader-ctp" target="_blank" rel="noopener noreferrer" className="project-icon-a">
+                    <a href="https://github.com/jingshiliu/easy-trader-ctp" target="_blank" rel="noopener noreferrer" className="project-icon-container">
                       <Icon icon="uit:github-alt"  className="projects-icon"/>
                     </a>
+                  </div>
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                     aute irure dolor in reprehenderit in voluptate velit esse cillum
+                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                     non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                     laborum.
+                  </div>
                 </div>
               </li>
 
               <li className="project-links mx-auto">
                 <div className="project-container">
-                  <div className="projects-title">One Bite</div>
-                  <a href="https://github.com/JessieSu2/CSC322-OneBite" target="_blank" rel="noopener noreferrer" className="project-icon-container">
-                    <Icon icon="uit:github-alt"  className="projects-icon"/>
-                  </a>
+                  <div className="title-icon-container">
+                    <div className="projects-title">One Bite</div>
+                    <a href="https://github.com/JessieSu2/CSC322-OneBite" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                      <Icon icon="uit:github-alt"  className="projects-icon"/>
+                    </a>
+                  </div>
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                     aute irure dolor in reprehenderit in voluptate velit esse cillum
+                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                     non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                     laborum.
+                  </div>
                 </div>
 
               </li>
 
               <li className="project-links mx-auto">
                 <div className="project-container">
-                  <div className="projects-title">Coffee Run</div>
-                  <a href="https://github.com/JessieSu2/CoffeeRun_Game" target="_blank" rel="noopener noreferrer" className="project-icon-container">
-                    <Icon icon="uit:github-alt"  className="projects-icon"/>
-                  </a>
-                  <a href="https://www.youtube.com/watch?v=vSUM_U1Rjfk&ab_channel=Jessie" target="_blank" rel="noopener noreferrer" className="project-icon-container">
-                    <Icon icon="ph:youtube-logo-thin"  className="projects-icon"/>
-                  </a>
+                  <div className="title-icon-container">
+                    <div className="projects-title">Coffee Run</div>
+                    <a href="https://github.com/JessieSu2/CoffeeRun_Game" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                      <Icon icon="uit:github-alt"  className="projects-icon"/>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=vSUM_U1Rjfk&ab_channel=Jessie" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                      <Icon icon="ph:youtube-logo-thin"  className="projects-icon"/>
+                    </a>
+                  </div>
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                     aute irure dolor in reprehenderit in voluptate velit esse cillum
+                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                     non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                     laborum.
+                  </div>
                 </div>
                 
               </li>
 
               <li className="project-links mx-auto">
                 <div className="project-container">
-                <div className="projects-title">Magical Walk</div>
-                  <a href="https://github.com/JessieSu2/MagicalWalk" target="_blank" rel="noopener noreferrer" className="project-icon-container">
-                    <Icon icon="uit:github-alt"  className="projects-icon"/>
-                  </a>
-                  <a href="https://www.youtube.com/watch?v=uMG2iKQ3erE&ab_channel=Jessie" target="_blank" rel="noopener noreferrer" className="project-icon-container">
-                    <Icon icon="ph:youtube-logo-thin"  className="projects-icon"/>
-                  </a>
+                  <div className="title-icon-container">
+                    <div className="projects-title">Magical Walk</div>
+                      <a href="https://github.com/JessieSu2/MagicalWalk" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                        <Icon icon="uit:github-alt"  className="projects-icon"/>
+                      </a>
+                      <a href="https://www.youtube.com/watch?v=uMG2iKQ3erE&ab_channel=Jessie" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                        <Icon icon="ph:youtube-logo-thin"  className="projects-icon"/>
+                      </a> 
+                  </div>
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                     aute irure dolor in reprehenderit in voluptate velit esse cillum
+                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                     non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                     laborum.
+                  </div>
+
                 </div>
                 
               </li>
 
               <li className="project-links mx-auto">
                 <div className="project-container">
-                  <div className="projects-title">Mini-Might</div>  
-                  <div className="project-icon-container">
-                    <a href="https://github.com/JessieSu2/Mini-Might" target="_blank" rel="noopener noreferrer" className="project-icon-container" >
-                      <Icon icon="uit:github-alt" className="projects-icon"/>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=8y-iWIHSUsE&ab_channel=Jessie" target="_blank" rel="noopener noreferrer" className="project-icon-container">
-                      <Icon icon="ph:youtube-logo-thin" className="projects-icon"/>
-                    </a>
+                  <div className="title-icon-container">
+                    <div className="projects-title">Mini-Might</div>  
+                    <div className="project-icon-container">
+                      <a href="https://github.com/JessieSu2/Mini-Might" target="_blank" rel="noopener noreferrer" className="project-icon-container" >
+                        <Icon icon="uit:github-alt" className="projects-icon"/>
+                      </a>
+                      <a href="https://www.youtube.com/watch?v=8y-iWIHSUsE&ab_channel=Jessie" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                        <Icon icon="ph:youtube-logo-thin" className="projects-icon"/>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                     aute irure dolor in reprehenderit in voluptate velit esse cillum
+                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                     non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                     laborum.
                   </div>
                 </div>
               </li>
                 
               <li className="project-links mx-auto">
                 <div className="project-container">
-                  <div className="projects-title">Toodaloo</div>
-                     <a href="https://github.com/too-da-loo/toodaloo" target="_blank" rel="noopener noreferrer" className="project-icon-container"> 
-                      <Icon icon="uit:github-alt" className="projects-icon"/>
-                    </a>
+                  <div className="title-icon-container">
+                    <div className="projects-title">Toodaloo</div>
+                      <a href="https://github.com/too-da-loo/toodaloo" target="_blank" rel="noopener noreferrer" className="project-icon-container"> 
+                        <Icon icon="uit:github-alt" className="projects-icon"/>
+                      </a>
+                  </div>
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                     aute irure dolor in reprehenderit in voluptate velit esse cillum
+                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                     non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                     laborum.
+                  </div>
                 </div>
-
               </li>
 
             </ul>
