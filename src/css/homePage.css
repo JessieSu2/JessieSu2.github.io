@@ -191,27 +191,60 @@
 }
 
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:600px){
+    #name{
+        font-size: 70px;
+    }
+
+    .what-do{
+        font-size: 15px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+        line-height:normal;
+    }
+
+    .project-links{
+        padding: 10px;
+    }
+
+    .project-title-section{
+        font-size: 60px;
+    }
+
     .project-description{
         display:none;
     }
+    
+    .project-container{
+        width: 400px;
+        padding: 30px;
+    }
+
+    .projects-title{
+        font-size: 15px;
+    }
+
+    .projects-icon{
+        font-size: 1.5em;
+    }
+
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 600px) {
     #name{
         font-size: 100px;
     }
 
     .what-do{
-        font-size: 25px;
-        letter-spacing: 1px;
+        font-size: 15px;
+        letter-spacing: 0px;
         word-spacing: 0px;
-        line-height: 40px;
+        line-height:normal;
     }
 
-    .project-title{
-        font-size:55px;
+    .projects-title{
+        font-size:25px;
 
     }
 
@@ -223,9 +256,33 @@
         font-size: 50px;
     }
 
+    .project-description{
+        display: none;
+    }
 
-  }
-  @media only screen and (max-width: 2560px) {
+    .projects-icon{
+        font-size: 2em;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px){
+    .what-do{
+        width: 75vw;
+        font-size: 25px;
+        letter-spacing: 2px;
+        word-spacing: 1px;
+        line-height: 50px;
+    }
+}
+
+@media only screen and (min-width: 992){
+
+}
+
+
+@media only screen and (min-width: 1200px) {
     #name{
         font-size: 100px;
     }
@@ -261,4 +318,4 @@
     }
 
 
-  }
+}
