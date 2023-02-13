@@ -76,7 +76,7 @@ function HomePage() {
                       <Icon icon="uit:github-alt"  className="projects-icon"/>
                     </a>
                   </div>
-                  <div>
+                  <div className="project-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -97,7 +97,7 @@ function HomePage() {
                       <Icon icon="uit:github-alt"  className="projects-icon"/>
                     </a>
                   </div>
-                  <div>
+                  <div className="project-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -122,7 +122,7 @@ function HomePage() {
                       <Icon icon="ph:youtube-logo-thin"  className="projects-icon"/>
                     </a>
                   </div>
-                  <div>
+                  <div className="project-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -147,7 +147,7 @@ function HomePage() {
                         <Icon icon="ph:youtube-logo-thin"  className="projects-icon"/>
                       </a> 
                   </div>
-                  <div>
+                  <div className="project-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -175,7 +175,7 @@ function HomePage() {
                       </a>
                     </div>
                   </div>
-                  <div>
+                  <div className="project-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -196,7 +196,7 @@ function HomePage() {
                         <Icon icon="uit:github-alt" className="projects-icon"/>
                       </a>
                   </div>
-                  <div>
+                  <div className="project-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
