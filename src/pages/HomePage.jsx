@@ -77,14 +77,13 @@ function HomePage() {
                     </a>
                   </div>
                   <div className="project-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
-                     aute irure dolor in reprehenderit in voluptate velit esse cillum
-                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                     non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                     laborum.
+                      Easy Trader is a stock market simular with beginner friendly UI, we want users to learn how to trade
+                      without the risk of losing actual money.  
+
+                      <br></br>
+                      <br></br>   
+
+                      Being a part of a team of three I contributed by designing and creating the frontend. 
                   </div>
                 </div>
               </li>
@@ -98,14 +97,15 @@ function HomePage() {
                     </a>
                   </div>
                   <div className="project-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
-                     aute irure dolor in reprehenderit in voluptate velit esse cillum
-                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                     non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                     laborum.
+                    OneBite is an online restaurant order and delivery system so that 
+                    OneBite can provide a menu, customers can browse and order 
+                    the food, and as well as delivery.
+
+                    <br></br>
+                    <br></br>
+
+                    Being a part of a team of four I contributed by doing the frontend for the application and worked on the 
+                    backend for the Chef to edit, add, delete items from the menu.
                   </div>
                 </div>
 
@@ -123,14 +123,10 @@ function HomePage() {
                     </a>
                   </div>
                   <div className="project-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
-                     aute irure dolor in reprehenderit in voluptate velit esse cillum
-                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                     non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                     laborum.
+                      Coffee Run is a 2D game where a cute, peaceful, extraterrestrial, and ethereal being, Ember, has the ability
+                      to see the yin in yang. Darkness in light. The evil in the world is seeping through the floor, creating cracks
+                      in the ground. Ember can discover these holes by interacting with the environment. Ember & other assets were 
+                      created using Piskel and the game itself was created using Unity.
                   </div>
                 </div>
                 
@@ -148,14 +144,10 @@ function HomePage() {
                       </a> 
                   </div>
                   <div className="project-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
-                     aute irure dolor in reprehenderit in voluptate velit esse cillum
-                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                     non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                     laborum.
+                    Magical Walk is a 3D game and it is like a magical walk through. However, the waterfall that provides the 
+                    surrounding area with water has stopped flowing. To make the water start flowing again the player
+                    has to go down three paths turning on each lantern in each path. Magical Walk was created using Unity
+                    and the assets were from the Unity Store.
                   </div>
 
                 </div>
@@ -176,14 +168,14 @@ function HomePage() {
                     </div>
                   </div>
                   <div className="project-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
-                     aute irure dolor in reprehenderit in voluptate velit esse cillum
-                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                     non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                     laborum.
+                    Mini-Might is where the player finds themselves minaturized in a forest and an evil villan is the cause
+                    of making everyone minaturized! The player has to get to the evil boss, defeat him and obtain a ray that will
+                    enlarge the player and everyone again!
+
+                    <br></br>
+                    <br></br>
+
+                    Being a part of a team of four I was in charge of the UI & display as well as the Drawing and animations
                   </div>
                 </div>
               </li>
@@ -197,14 +189,14 @@ function HomePage() {
                       </a>
                   </div>
                   <div className="project-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
-                     aute irure dolor in reprehenderit in voluptate velit esse cillum
-                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                     non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                     laborum.
+                    Toodaloo is a toilet application for New York City! Whenever you have to use the bathroom in the city
+                    but you can not find a place to go, Toodaloo, saves the day.
+
+                    <br></br>
+                    <br></br>
+
+                    Being a part of a team of 3, I contributed by working on UI, and
+                    multiple pages of the appliation as well as the navigation bar.
                   </div>
                 </div>
               </li>
