@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura:wght@300;500;400&family=Roboto:wght@100&family=Silkscreen&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura&family=Silkscreen&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css');
 .background{
     background: linear-gradient(#64c8e6, #9198e5);
@@ -109,7 +109,6 @@
 .project-container .title-icon-container{
     display: flex;
     justify-content: center;
-    padding-bottom: 1.5%;
 }
 
 .projects-icon{
@@ -239,19 +238,20 @@
     }
 
     .what-do{
-        font-size: 15px;
+        font-size: 18px;
         letter-spacing: 0px;
         word-spacing: 0px;
         line-height:normal;
     }
 
     .projects-title{
-        font-size:25px;
+        font-size:20px;
 
     }
 
     .project-container{
         width: 500px;
+        padding: 35px;
         height: 100px;
     }
 
@@ -280,6 +280,7 @@
 
     .project-container{
         width: 75vw;
+        height: 250px;
         padding: 18px;
     }
 
@@ -370,7 +371,7 @@
 }
 
 
-@media screen and (min-width: 1400px) {
+@media only screen and (min-width: 1400px) {
     #name{
         font-size: 150px;
     }
