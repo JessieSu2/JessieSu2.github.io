@@ -56,7 +56,7 @@ function HomePage() {
           I've always been interested in the vast capabilities of technology, whether it be gaming, accessibility, or innovation. 
           Games can teach people about mental health and problems in the world or simply for enjoyment. 
           I love that technology can make people's lives easier through software or engineering. 
-          I want to create things that help people, especially the elders, where things are not as accessible. 
+          I want to create products or services that help people, especially the elders, where these things are not as accessible. 
           Creating something that no one thought about before or something that will be the next big thing is fascinating. 
           One small idea can turn into something big!
 
