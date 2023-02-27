@@ -11,6 +11,10 @@
     background:url(../images/stars.svg);
 }
  
+.intro-container{
+    height: 150vh;
+}
+
 #intro-name{
     text-align: center;
     color:azure;
@@ -91,6 +95,7 @@
 .projects{
     width: 100%;
     text-align: center;
+    padding-bottom: 5%;
 }
 
 .project-title-section{
@@ -160,6 +165,14 @@
     animation-timing-function: ease-out, ease-in-out;
     -webkit-animation-iteration-count: 1, infinite;
     animation-iteration-count: 1, infinite;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
 }
 
 @keyframes slide-up{

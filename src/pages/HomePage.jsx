@@ -1,11 +1,21 @@
 import React from "react";
 import '../css/HomePage.css';
-import { Parallax, ParallaxLayer} from '@react-spring/parallax'
 import stars from '../images/stars.svg';
 import NavBar from "./NavBar";
 import { Icon } from '@iconify/react';
-
+import { useRef, useEffect, useState } from 'react';
 function HomePage() {
+  const myRef = useRef();
+  const [isVisible, setIsVisible] = useState();
+  console.log('is visible', isVisible);
+  useEffect(() => {
+    const observer = new IntersectionObserver ((entries) => {
+      const entry = entries[0];
+      setIsVisible(entry.isIntersecting)
+    }) 
+    observer.observe(myRef.current)
+  }, [])
+
   return (
     
     <div style={{ width: '100%', height: '100%'}}>
@@ -209,7 +219,8 @@ function HomePage() {
       </Parallax> */}
       <div className="background">
         <div className="background-image">
-          <div id="me">
+          <div className="intro-container">
+            <div id="me">
             <NavBar />
             <div className="container">
               <div id="intro-name">Hi, I'm</div>
@@ -233,21 +244,23 @@ function HomePage() {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="what-do-container">
-             <div className="what-do mx-auto">
-              I've always been interested in the vast capabilities of technology, whether it be gaming, accessibility, or innovation. 
-              Games can teach people about mental health and problems in the world or simply for enjoyment. 
-              I love that technology can make people's lives easier through software or engineering. 
-              I want to create products or services that help people, especially the elders, where these things are not as accessible. 
-              Creating something that no one thought about before or something that will be the next big thing is fascinating. 
-              One small idea can turn into something big!
             </div>
-          </div>
-           
 
-          <div className="projects">
+            <div className="what-do-container">
+              <div className="what-do mx-auto">
+                I've always been interested in the vast capabilities of technology, whether it be gaming, accessibility, or innovation. 
+                Games can teach people about mental health and problems in the world or simply for enjoyment. 
+                I love that technology can make people's lives easier through software or engineering. 
+                I want to create products or services that help people, especially the elders, where these things are not as accessible. 
+                Creating something that no one thought about before or something that will be the next big thing is fascinating. 
+                One small idea can turn into something big!
+              </div>
+            </div>
+           
+          </div>
+
+
+          <div ref={myRef} className="projects">
             <h1 className="project-title-section mx-auto">Latest Projects</h1>
             <ul className="project-links-ul">          
 
