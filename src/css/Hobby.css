@@ -1,7 +1,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura:wght@300;400&family=Roboto:wght@100&family=Silkscreen&family=Space+Mono&display=swap');
 
 
-.background{
+.background-hobby{
     background: linear-gradient(#64c8e6, #9198e5);
     /* background-image:url(../images/stars.svg); */
 }
