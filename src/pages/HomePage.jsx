@@ -5,15 +5,36 @@ import NavBar from "./NavBar";
 import { Icon } from '@iconify/react';
 import { useRef, useEffect, useState } from 'react';
 function HomePage() {
+
   const myRef = useRef();
   const [isVisible, setIsVisible] = useState();
-  console.log('is visible', isVisible);
+  // console.log('is visible', isVisible);
+  const options = {
+    // rootMargin: "-50px",
+    threshold: 0,
+  } ;
+
+
   useEffect(() => {
-    const observer = new IntersectionObserver ((entries) => {
-      const entry = entries[0];
-      setIsVisible(entry.isIntersecting)
-    }) 
-    observer.observe(myRef.current)
+    const sections = document.querySelectorAll(".project-links.mx-auto");
+    console.log(sections);
+    const observer = new IntersectionObserver ((entries,options) => {
+      entries.forEach((entry) => {
+        console.log(entry.target);
+        setIsVisible(entry.isIntersecting)
+        if(entry.isIntersecting){
+          entry.target.classList.add('show');
+        }else{
+          entry.target.classList.remove('show');
+        }
+      })
+    
+    },options) 
+    
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+    // observer.observe(myRef.current)
   }, [])
 
   return (
@@ -216,7 +237,7 @@ function HomePage() {
         </ParallaxLayer>
 
 
-      </Parallax> */}
+     </Parallax>  */}
       <div className="background">
         <div className="background-image">
           <div className="intro-container">
@@ -260,11 +281,11 @@ function HomePage() {
           </div>
 
 
-          <div ref={myRef} className="projects">
-            <h1 className="project-title-section mx-auto">Latest Projects</h1>
+          <div ref={myRef} className="projects section">
+            <h1 className="project-title-section section mx-auto">Latest Projects</h1>
             <ul className="project-links-ul">          
 
-              <li className="project-links mx-auto">
+              <li className="project-links hidden mx-auto">
                 <div className="project-container">
                   <div className="title-icon-container">
                     <div className="projects-title">Easy Trader</div>
@@ -284,7 +305,7 @@ function HomePage() {
                 </div>
               </li>
 
-              <li className="project-links mx-auto">
+              <li className="project-links hidden mx-auto">
                 <div className="project-container">
                   <div className="title-icon-container">
                     <div className="projects-title">One Bite</div>
@@ -307,7 +328,7 @@ function HomePage() {
 
               </li>
 
-              <li className="project-links mx-auto">
+              <li className="project-links hidden mx-auto">
                 <div className="project-container">
                   <div className="title-icon-container">
                     <div className="projects-title">Coffee Run</div>
@@ -328,7 +349,7 @@ function HomePage() {
                 
               </li>
 
-              <li className="project-links mx-auto">
+              <li className="project-links hidden mx-auto">
                 <div className="project-container">
                   <div className="title-icon-container">
                     <div className="projects-title">Magical Walk</div>
@@ -350,7 +371,7 @@ function HomePage() {
                 
               </li>
 
-              <li className="project-links mx-auto">
+              <li className="project-links hidden mx-auto">
                 <div className="project-container">
                   <div className="title-icon-container">
                     <div className="projects-title">Mini-Might</div>  
@@ -376,7 +397,7 @@ function HomePage() {
                 </div>
               </li>
                 
-              <li className="project-links mx-auto">
+              <li className="project-links hidden mx-auto">
                 <div className="project-container">
                   <div className="title-icon-container">
                     <div className="projects-title">Toodaloo</div>
