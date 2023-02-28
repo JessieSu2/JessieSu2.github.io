@@ -105,6 +105,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
+    column-count: auto;
     
 }
 
@@ -135,6 +136,10 @@
     justify-content: center;
 }
 
+.project-description{
+    text-align: justify;
+}
+
 .projects-icon{
     font-size: 4em;
     color: azure;
@@ -148,6 +153,7 @@
     justify-content: center;
     padding-right: 15px;
 }
+
 
 .bob:hover{
     color: blue;
@@ -331,7 +337,7 @@
 
     .project-container{
         width: 75vw;
-        height: 250px;
+        height: 275px;
         padding: 18px;
     }
 
@@ -342,10 +348,7 @@
         word-spacing: 0px;
         line-height: normal;
         font-family: 'Jura';
-    }
-
-    .project-links-ul{
-        display: flexbox;
+        padding: 15px;
     }
 
     .project-links{
@@ -355,6 +358,11 @@
     .projects-icon{
         font-size: 2.5em;
     }
+
+    .title-icon-container{
+        padding-top: 10px;
+    }
+
 }
 
 @media only screen and (min-width: 992px){
@@ -370,7 +378,7 @@
 
 
     .project-links{
-        padding: 10px 0px;
+        padding: 10px 15px;
     }
 
     .project-description{
@@ -380,9 +388,8 @@
     .projects-icon{
         font-size: 2.8em;
     }
-    .project-links-ul{
-        column-count: 2;
-    }
+
+
 }
 
 
@@ -406,7 +413,7 @@
     }
 
     .project-container{
-        height: 300px;
+        height: 350px;
         width: 550px;
         
     }
@@ -432,12 +439,12 @@
     .project-container{
         width: 650px;
         padding: 40px;
-        height: 300px;
+        height: 375px;
     }
 
 
     .project-links{
-        padding: 10px 0px;
+        padding: 20px 30px;
     }
 
     .project-description{
@@ -454,11 +461,11 @@
     .project-container{
         width: 700px;
         padding: 65px;
-        height: 350px;
+        height: 400px;
     }
 
     .project-links{
-        padding: 20px 0px;
+        padding: 25px 30px;
     }
 
     .projects-title{
@@ -469,17 +476,18 @@
         font-size: 3.5em;
     }
 
-
+    .title-icon-container{
+        padding-top: 0px;
+    }
 }
 @media only screen and (min-width: 1900px) {
     .project-container{
         width: 800px;
         padding: 80px;
-        height: 380px;
     }
 
     .project-links{
-        padding: 30px 0px;
+        padding: 30px 35px;
     }
 }
 
@@ -499,15 +507,15 @@
     }
 
     .project-links{
-        padding: 30px 0px;
-    }
-
-    .project-links-ul{
-        column-count: 3;
+        padding: 35px 40px;
     }
 
     .project-description{
         font-size: 23px;
+    }
+
+    .project-description{
+        padding: 0px;
     }
 }
 
