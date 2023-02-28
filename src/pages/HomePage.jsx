@@ -18,7 +18,7 @@ function HomePage() {
   useEffect(() => {
     const sections = document.querySelectorAll(".project-links.mx-auto");
     console.log(sections);
-    const observer = new IntersectionObserver ((entries,options) => {
+    const observer = new IntersectionObserver ((entries) => {
       entries.forEach((entry) => {
         console.log(entry.target);
         setIsVisible(entry.isIntersecting)
@@ -29,13 +29,32 @@ function HomePage() {
         }
       })
     
-    },options) 
+    },options); 
     
     sections.forEach(section => {
       observer.observe(section);
     });
     // observer.observe(myRef.current)
   }, [])
+
+  useEffect(() => {
+    const titles = document.querySelector('.project-title-section');
+    console.log(title);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('slide-up');
+        }
+        // else{
+        //   entry.target.classList.remove('slide-up');
+        // }
+      });
+    }, options);
+
+    observer.observe(titles);
+
+  },[]);
+
 
   return (
     

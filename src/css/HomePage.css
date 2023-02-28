@@ -4,7 +4,6 @@
     background:  linear-gradient(#64c8e6, #9198e5);
     /* background: linear-gradient(#461937,#c4a1e4); */
 
-    /* background-image:url(../images/stars.svg); */
 }
 
 .background-image{
@@ -86,6 +85,10 @@
     text-rendering: optimizeLegibility;
     text-shadow: 0.02em 0 rgb(134, 134, 134);
     animation: slide-up 4s ease;
+}
+
+.intro-container{
+    padding-bottom: 50vh;
 }
 
 .projects{
@@ -171,10 +174,15 @@
 
 .hidden{
     opacity: 0;
-    transition: all 1s;
+    transition: all 1.5s ease-in;
 }
 .show{
     opacity: 1;
+}
+
+/* Utility classes */
+.slide-up{
+    animation: slide-up 1s ease-in;
 }
 
 @keyframes slide-up{
@@ -300,11 +308,11 @@
         font-size: 20px;
         letter-spacing: 1px;
         word-spacing: 2px;
-        line-height:40px;
+        line-height: 25px;
     }
 
     .projects-title{
-        font-size:20px;
+        font-size:15px;
 
     }
 
@@ -332,7 +340,7 @@
     .what-do{
         width: 75vw;
         font-size: 20px;
-        line-height: 40px;
+        line-height: 30px;
     }
 
     .project-container{
@@ -349,6 +357,10 @@
         line-height: normal;
         font-family: 'Jura';
         padding: 15px;
+    }
+
+    .projects-title{
+        font-size: 25px;
     }
 
     .project-links{
@@ -493,11 +505,11 @@
 
 @media only screen and (min-width: 2440px) {
     .what-do{
-        font-size: 25px;
+        font-size: 20px;
         font-weight:  100;
         letter-spacing: 1px;
         word-spacing: 3px;
-        line-height: 50px;
+        line-height: 45px;
     }
 
     .project-container{
