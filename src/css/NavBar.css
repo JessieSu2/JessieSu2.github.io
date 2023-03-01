@@ -21,6 +21,8 @@
     justify-content: space-between;
     width: 100%;
     padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
 }
 .navbarMenu{
     display: flex;
@@ -29,6 +31,8 @@
 
 .navbarItem{
     padding: 0px 10px;
+    justify-content: center;
+    text-align: center;
 }
 
 .nav-link{

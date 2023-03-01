@@ -300,8 +300,8 @@ function HomePage() {
           </div>
 
 
-          <div ref={myRef} className="projects section">
-            <h1 className="project-title-section section mx-auto">Latest Projects</h1>
+          <div ref={myRef} className="projects">
+            <h1 className="project-title-section mx-auto">Latest Projects</h1>
             <ul className="project-links-ul">          
 
               <li className="project-links hidden mx-auto">
