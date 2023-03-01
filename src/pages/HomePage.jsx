@@ -291,7 +291,7 @@ function HomePage() {
                 I've always been interested in the vast capabilities of technology, whether it be gaming, accessibility, or innovation. 
                 Games can teach people about mental health and problems in the world or simply for enjoyment. 
                 I love that technology can make people's lives easier through software or engineering. 
-                I want to create products or services that help people, especially the elders, where these things are not as accessible. 
+                I want to create products or services that help people, especially the elderly, where certain things are not as easily accessible.
                 Creating something that no one thought about before or something that will be the next big thing is fascinating. 
                 One small idea can turn into something big!
               </div>
@@ -300,51 +300,118 @@ function HomePage() {
           </div>
 
 
-          <div ref={myRef} className="projects">
+          <div className="projects">
             <h1 className="project-title-section mx-auto">Latest Projects</h1>
             <ul className="project-links-ul">          
 
               <li className="project-links hidden mx-auto">
-                <div className="project-container">
-                  <div className="title-icon-container">
-                    <div className="projects-title">Easy Trader</div>
-                    <a href="https://github.com/jingshiliu/easy-trader-ctp" target="_blank" rel="noopener noreferrer" className="project-icon-container">
-                      <Icon icon="uit:github-alt"  className="projects-icon bob" />
-                    </a>
-                  </div>
-                  <div className="project-description">
-                      Easy Trader is a stock market simular with beginner friendly UI, we want users to learn how to trade
+                <div className="corner-ribbon">
+                  
+                  <div className="project-container">
+                    <div className="corner-ribbon__inner">
+                      <div className="corner-ribbon__ribbon">
+                        <div className="ribbon-text">
+                          Collaborated
+                        </div>
+                      </div>
+                    </div>
+                    <div className="title-icon-container">
+                      <div className="projects-title">Easy Trader</div>
+                      <a href="https://github.com/jingshiliu/easy-trader-ctp" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                        <Icon icon="uit:github-alt"  className="projects-icon bob" />
+                      </a>
+                    </div>
+                    <div className="project-description">
+                      Easy Trader is a stock market simulator with beginner friendly UI, we want users to learn how to trade
                       without the risk of losing actual money.  
 
                       <br></br>
                       <br></br>   
 
-                      Being a part of a team of three I contributed by designing and creating the frontend. 
+                      Being a part of a team of three I contributed by creating and designing the frontend.  
+                    </div>
+                    <div className="every-bubble">
+                      <div className="bubble-container">
+                        <div className="bubble">Bootstrap</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">CSS</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">Chart.js</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">Express.js</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">FireBase</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">HTML</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">Node.js</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">React.js</div>
+                      </div>
+                    </div>
                   </div>
+
                 </div>
               </li>
 
               <li className="project-links hidden mx-auto">
-                <div className="project-container">
-                  <div className="title-icon-container">
-                    <div className="projects-title">One Bite</div>
-                    <a href="https://github.com/JessieSu2/CSC322-OneBite" target="_blank" rel="noopener noreferrer" className="project-icon-container">
-                      <Icon icon="uit:github-alt"  className="projects-icon bob"/>
-                    </a>
-                  </div>
-                  <div className="project-description">
-                    OneBite is an online restaurant order and delivery system so that 
-                    OneBite can provide a menu, customers can browse and order 
-                    the food, and as well as delivery.
+                <div className="corner-ribbon">
+                  <div className="project-container">
+                    <div class="corner-ribbon__inner">
+                        <div class="corner-ribbon__ribbon">
+                          <div className="ribbon-text">
+                          Collaborated
+                          </div>
+                        </div>
+                    </div>
+                    <div className="title-icon-container">
+                      <div className="projects-title">One Bite</div>
+                      <a href="https://github.com/JessieSu2/CSC322-OneBite" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                        <Icon icon="uit:github-alt"  className="projects-icon bob"/>
+                      </a>
+                    </div>
+                    <div className="project-description">
+                      OneBite is an online restaurant order and delivery system so that 
+                      OneBite can provide a menu, customers can browse and order 
+                      the food, and as well as delivery.
 
-                    <br></br>
-                    <br></br>
+                      <br></br>
+                      <br></br>
 
-                    Being a part of a team of four I contributed by doing the frontend for the application and worked on the 
-                    backend for the Chef to edit, add, delete items from the menu.
+                      Being a part of a team of four I contributed by doing the frontend for the application and worked on the 
+                      backend for the Chef to edit, add, delete items from the menu.
+                    </div>
+                    <div className="every-bubble">
+
+                      <div className="bubble-container">
+                        <div className="bubble">CSS</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">Flask</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">HTML</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">Jinja</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">MySQL</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">Python</div>
+                      </div>
+                    </div>
                   </div>
+
                 </div>
-
               </li>
 
               <li className="project-links hidden mx-auto">
@@ -363,6 +430,18 @@ function HomePage() {
                       to see the yin in yang. Darkness in light. The evil in the world is seeping through the floor, creating cracks
                       in the ground. Ember can discover these holes by interacting with the environment. Ember & other assets were 
                       created using Piskel and the game itself was created using Unity.
+                  </div>
+                  <div className="every-bubble">
+
+                    <div className="bubble-container">
+                      <div className="bubble">C#</div>
+                    </div>
+                    <div className="bubble-container">
+                      <div className="bubble">Piskel</div>
+                    </div>
+                    <div className="bubble-container">
+                      <div className="bubble">Unity</div>
+                    </div>
                   </div>
                 </div>
                 
@@ -385,54 +464,105 @@ function HomePage() {
                     has to go down three paths turning on each lantern in each path. Magical Walk was created using Unity
                     and the assets were from the Unity Store.
                   </div>
+                  <div className="every-bubble">
 
-                </div>
-                
-              </li>
-
-              <li className="project-links hidden mx-auto">
-                <div className="project-container">
-                  <div className="title-icon-container">
-                    <div className="projects-title">Mini-Might</div>  
-                    <div className="project-icon-container">
-                      <a href="https://github.com/JessieSu2/Mini-Might" target="_blank" rel="noopener noreferrer" className="project-icon-container" >
-                        <Icon icon="uit:github-alt" className="projects-icon bob"/>
-                      </a>
-                      <a href="https://www.youtube.com/watch?v=8y-iWIHSUsE&ab_channel=Jessie" target="_blank" rel="noopener noreferrer" className="project-icon-container">
-                        <Icon icon="ph:youtube-logo-thin" className="projects-icon bob"/>
-                      </a>
+                    <div className="bubble-container">
+                      <div className="bubble">C#</div>
+                    </div>
+                    <div className="bubble-container">
+                      <div className="bubble">Piskel</div>
+                    </div>
+                    <div className="bubble-container">
+                      <div className="bubble">Unity</div>
                     </div>
                   </div>
-                  <div className="project-description">
-                    Mini-Might is where the player finds themselves minaturized in a forest and an evil villan is the cause
-                    of making everyone minaturized! The player has to get to the evil boss, defeat him and obtain a ray that will
-                    enlarge the player and everyone again!
+                </div>
+                
+              </li>
 
-                    <br></br>
-                    <br></br>
+              <li className="project-links hidden mx-auto">
+                <div className="corner-ribbon">
+                  <div className="corner-ribbon__inner">
+                    <div className="corner-ribbon__ribbon">
+                      <div className="ribbon-text">
+                        Collaborated
+                      </div>
+                    </div>
+                  </div>
+                  <div className="project-container">
+                    <div className="title-icon-container">
+                      <div className="projects-title">Mini-Might</div>  
+                      <div className="project-icon-container">
+                        <a href="https://github.com/JessieSu2/Mini-Might" target="_blank" rel="noopener noreferrer" className="project-icon-container" >
+                          <Icon icon="uit:github-alt" className="projects-icon bob"/>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=8y-iWIHSUsE&ab_channel=Jessie" target="_blank" rel="noopener noreferrer" className="project-icon-container">
+                          <Icon icon="ph:youtube-logo-thin" className="projects-icon bob"/>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="project-description">
+                      Mini-Might is where the player finds themselves minaturized in a forest and an evil villan is the cause
+                      of making everyone minaturized! The player has to get to the evil boss, defeat him and obtain a ray that will
+                      enlarge the player and everyone again!
 
-                    Being a part of a team of four I was in charge of the UI & display as well as the Drawing and animations
+                      <br></br>
+                      <br></br>
+
+                      Being a part of a team of four I was in charge of the UI & display as well as the Drawing and animations
+                    </div>
+                    <div className="every-bubble">
+
+                      <div className="bubble-container">
+                        <div className="bubble">C#</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">Piskel</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">Unity</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
                 
               <li className="project-links hidden mx-auto">
-                <div className="project-container">
-                  <div className="title-icon-container">
-                    <div className="projects-title">Toodaloo</div>
-                      <a href="https://github.com/too-da-loo/toodaloo" target="_blank" rel="noopener noreferrer" className="project-icon-container"> 
-                        <Icon icon="uit:github-alt" className="projects-icon bob"/>
-                      </a>
+                <div className="corner-ribbon">
+                  <div className="corner-ribbon__inner">
+                    <div className="corner-ribbon__ribbon">
+                      <div className="ribbon-text">
+                        Collaborated
+                      </div>
+                    </div>
                   </div>
-                  <div className="project-description">
-                    Toodaloo is a toilet application for New York City! Whenever you have to use the bathroom in the city
-                    but you can not find a place to go, Toodaloo, saves the day.
+                  <div className="project-container">
+                    <div className="title-icon-container">
+                      <div className="projects-title">Toodaloo</div>
+                        <a href="https://github.com/too-da-loo/toodaloo" target="_blank" rel="noopener noreferrer" className="project-icon-container"> 
+                          <Icon icon="uit:github-alt" className="projects-icon bob"/>
+                        </a>
+                    </div>
+                    <div className="project-description">
+                      Toodaloo is a toilet application for New York City! Whenever you have to use the bathroom in the city
+                      but you can not find a place to go, Toodaloo, saves the day.
 
-                    <br></br>
-                    <br></br>
+                      <br></br>
+                      <br></br>
 
-                    Being a part of a team of 3, I contributed by working on UI, and
-                    multiple pages of the appliation as well as the navigation bar.
+                      Being a part of a team of 3, I contributed by working on UI, and
+                      multiple pages of the appliation as well as the navigation bar.
+                    </div>
+                    <div className="every-bubble">
+
+                      <div className="bubble-container">
+                        <div className="bubble">Android Studio</div>
+                      </div>
+                      <div className="bubble-container">
+                        <div className="bubble">Java</div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </li>

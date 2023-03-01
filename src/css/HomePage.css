@@ -159,6 +159,65 @@
     padding-right: 15px;
 }
 
+/* Bubbles */
+.bubble-container{
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    bottom: 0em;
+}
+.bubble{
+    padding: 5px 10px;
+    background-color: #121212;
+    width: fit-content;
+    border-radius: 50em;
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
+.corner-ribbon {
+    position: relative;
+}
+
+.corner-ribbon__inner {
+    /* Displayed at the top left corner */
+    left: 0px;
+    position: absolute;
+    top: 0px;
+
+    /* Size */
+    height: 10em;
+    width: 10em;
+
+    /* Hide the part of its children which is displayed outside */
+    overflow: hidden;
+}
+
+.corner-ribbon__ribbon {
+    /* Position */
+    left: 0em;
+    position: absolute;
+    top: 3em;
+
+    /* Size */
+    height: 1.5em;
+    width: 12em;
+
+    /* Displayed diagonally */
+    transform: translate(-38px, -8px) rotate(-45deg);
+
+    /* Background color */
+    background-color: #adfab4;
+
+    /* Centerize the text content */
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* font-size: 11.5px; */
+}
+
+
 
 .bob:hover{
     color: rgb(95, 159, 255);
@@ -286,6 +345,7 @@
     .project-description{
         display:none;
     }
+
     
     .project-container{
         width: 300px;
@@ -300,7 +360,29 @@
     .projects-icon{
         font-size: 1.5em;
     }
+    .every-bubble{
+        display:none;
+    }
     
+    .corner-ribbon__inner{
+        height: 5em;
+        border-radius: 5em;
+    }
+
+    .corner-ribbon__ribbon{
+        left: 1.5em;
+        position: absolute;
+        top: 2em;
+        width: 7em;
+        height: 1em;
+    }
+
+    .ribbon-text{
+        font-size: 10px;
+        /* text-align: center;
+        vertical-align: center;
+        justify-content: center; */
+    }
 }
                       
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -320,9 +402,9 @@
         width: 80vw;
     }
     
-    /* .project-links{
-        padding: 15px
-    } */
+    .project-links{
+        padding: 20px
+    }
 
     .projects-title{
         font-size:15px;
@@ -331,7 +413,7 @@
     
 
     .project-container{
-        width: 350px;
+        width: 400px;
         padding: 35px;
         height: 100px;
     }
@@ -345,6 +427,26 @@
         font-size: 2em;
     } 
     
+
+    .every-bubble{
+        display:none;
+    }
+
+    .corner-ribbon__inner{
+        height: 6em;
+        border-radius: 2.5em;
+
+    }
+
+    .corner-ribbon__ribbon{
+        top:2.5em;
+        transform: translate(-38px, -8px) rotate(-40deg);
+    }
+
+    .ribbon-text{
+        font-size: 13px;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -366,6 +468,9 @@
         font-size: 15px;
         line-height: 30px;
     }
+    .project-links{
+        padding: 25px 10px;
+    }
 
     .project-container{
         width: 80vw;
@@ -376,7 +481,7 @@
     .project-description{
         display:flex;
         font-size: 16px;
-        padding: 15px;
+        padding: 30px;
     }
 
     .projects-title{
@@ -390,6 +495,37 @@
     .title-icon-container{
         padding-top: 10px;
     }
+
+    .every-bubble{
+        display:inline-block;
+    }
+
+    
+.corner-ribbon__inner {
+    /* Displayed at the top left corner */
+    left: 0px;
+    top: 0px;
+
+    /* Size */
+    height: 10em;
+    width: 10em;
+
+}
+
+.corner-ribbon__ribbon {
+    /* Position */
+    left: 0em;
+    position: absolute;
+    top: 3em;
+
+    /* Size */
+    height: 1.5em;
+    width: 12em;
+
+    transform: translate(-38px, -8px) rotate(-45deg);
+}
+
+
 
 }
 
@@ -420,7 +556,7 @@
         width: 600px;
         /* width: 450px; */
         padding: 25px;
-        height: 400px;
+        height: 420px;
     }
 
     .projects-title{
@@ -473,7 +609,7 @@
     }
     
     .project-container{
-        height: 400px;
+        height: 475px;
         width: 550px;
         
     }
@@ -493,7 +629,7 @@
     .project-container{
         width: 600px;
         padding: 40px;
-        height: 400px;
+        height: 450px;
     }
     
     
@@ -516,7 +652,7 @@
     .project-container{
         width: 700px;
         padding: 45px;
-        height: 350px;
+        height: 450px;
     }
     
     .project-links{
@@ -545,7 +681,7 @@
     .project-container{
         width: 700px;
         padding: 50px;
-        height: 420px;
+        height: 450px;
     }
 
     .project-links{
