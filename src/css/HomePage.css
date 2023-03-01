@@ -38,7 +38,7 @@
     text-align: center;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(1px);
     color: white;
@@ -55,7 +55,7 @@
 
 .intro-icons{
     color: azure;
-    font-size: 3.5em;
+    font-size: 2em;
 }
 
 .icon-spacing{
@@ -264,13 +264,13 @@
         font-size: 70px;
     }
 
-    #title{
+    /* #title{
         font-size: 15px;
-    }
+    } */
 
-    .intro-icons{
+    /* .intro-icons{
         font-size: 2.5em;
-    }
+    } */
 
     .what-do{
         font-size: 15px;
@@ -308,13 +308,13 @@
     #name{
         font-size: 85px;
     }
-    #title{
+    /* #title{
         font-size: 18px;
-    }
+    } */
 
-    .intro-icons{
+    /* .intro-icons{
         font-size: 2.5em;
-    }
+    } */
 
     .what-do{
         width: 80vw;
@@ -353,13 +353,13 @@
     #name{
         font-size: 90px;
     }
-    #title{
+    /* #title{
         font-size: 20px;
-    }
+    } */
 
-    .intro-icons{
+    /* .intro-icons{
         font-size: 2.8em;
-    }
+    } */
 
     .what-do{
         width: 85vw;
@@ -403,9 +403,9 @@
         font-size: 95px;
     }
 
-    #title{
+    /* #title{
         font-size: 22px;
-    }
+    } */
 
     .what-do{
         width: 60vw;
@@ -448,14 +448,14 @@
     #name{
         font-size: 100px;
     }
-
+/* 
     #title{
         font-size: 25px;
     }
-    
-    .intro-icons{
+     */
+    /* .intro-icons{
         font-size: 3em;
-    }
+    } */
 
     .what-do{
         font-size: 20px;
