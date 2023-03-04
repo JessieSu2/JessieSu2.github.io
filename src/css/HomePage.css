@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura&family=Silkscreen&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css');
 
-.section{
-    height: 100vh;
-    /* background-color: unset; */
-}
-
 .background{
     /* background:  linear-gradient(#64c8e6, #9198e5); */
     /* background: linear-gradient(#461937,#c4a1e4); */
@@ -271,20 +266,65 @@
 /* Figma */
 .figma-section{
     background-color: #F3F4F8;
-    
+    width: 100%;
+}
+
+.figma{
+    text-align: center;
+}
+
+.figma-designs{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fpw-wrapper{
+    padding: 20px;
+}
+
+.figma-project-wrapper{
+    position: relative;
 }
 
 .figma-project{
-    position: relative;
     width:fit-content;
+    width:450px;
+    height:300px;
 }
 
-.figma-color{
-    background: rgb(8, 8, 8);
+.figma-preview{
+    height:inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    background-color: black;    
+    overflow: hidden;
+}
+
+.figma-image{
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figma-project-title{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.figma-project-title:hover{
+    display:block;
+    background: rgb(8, 8, 8, 0.50);
     z-index: 2;
 }
 
 .figma-link-title{
+    padding: 20px;
     color: white;
     position: absolute;
     top:0;
@@ -292,22 +332,19 @@
 }
 
 .figma-icon{
-    color: rgb(0, 0, 0);
-    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
-    bottom:0;
-    left: 0;
-    display: flexbox;
+    font-size: 40px;
 }
 
 .hide{
     display: none;
-}
-
-.figma-preview:hover{
-    opacity: 0.5;
-    background-color: #121212;
+    transition: 0.5s ease;
 }
 
 .figma-preview:hover + .hide{
@@ -318,6 +355,35 @@
 /* Utility classes */
 .slide-up{
     animation: slide-up 2s ease-in;
+}
+
+.left-slide-in{
+    animation: left-slide-in 2s ease-in;
+
+}
+
+.right-slide-in{
+    animation: right-slide-in 2s ease-in;
+}
+
+
+@keyframes left-slide-in{
+    0%{
+        transform: translateX(-125px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes right-slide-in{
+    0%{
+        transform: translateX(125px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
 }
 
 @keyframes slide-up{

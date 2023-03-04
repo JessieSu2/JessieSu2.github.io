@@ -8,13 +8,12 @@ import { hover } from "@testing-library/user-event/dist/hover";
 
 function HomePage() {
 
-  const myRef = useRef();
-  const [isVisible, setIsVisible] = useState();
   // console.log('is visible', isVisible);
   const options = {
     // rootMargin: "-50px",
-    threshold: 0,
+    threshold: 0.25
   } ;
+
 
 
   useEffect(() => {
@@ -23,7 +22,6 @@ function HomePage() {
     const observer = new IntersectionObserver ((entries) => {
       entries.forEach((entry) => {
         console.log(entry.target);
-        setIsVisible(entry.isIntersecting)
         if(entry.isIntersecting){
           entry.target.classList.add('show');
         }else{
@@ -42,8 +40,9 @@ function HomePage() {
   useEffect(() => {
     const titles = document.querySelector('.project-title-section');
     console.log(title);
-    const observer = new IntersectionObserver((entries) => {
+    const observertitles = new IntersectionObserver((entries) => {
       entries.forEach((entry)=>{
+        console.log(entry.target);
         if(entry.isIntersecting){
           entry.target.classList.add('slide-up');
         }
@@ -53,7 +52,49 @@ function HomePage() {
       });
     }, options);
 
-    observer.observe(titles);
+    observertitles.observe(titles);
+
+  },[]);
+
+  useEffect(() => {
+    const figmaProjsLeft = document.querySelectorAll('.left');
+    console.log(figmaProjsLeft);
+    const observerLeft = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry.target);
+        if (entry.isIntersecting){
+          entry.target.classList.add('left-slide-in');
+        }else{
+          entry.target.classList.remove('left-slide-in');
+        }
+      })
+    }, );
+
+    
+    figmaProjsLeft.forEach( (left) =>{
+      observerLeft.observe(left);
+    });
+
+  },[]);
+
+  useEffect(() => {
+    const figmaProjsRight = document.querySelectorAll('.figma-project-wrapper.right');
+    console.log(figmaProjsRight);
+    const observerRight = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry.target);
+        if (entry.isIntersecting){
+          entry.target.classList.add('right-slide-in');
+        }else{
+          entry.target.classList.remove('right-slide-in');
+        }
+      })
+    },);
+
+
+    figmaProjsRight.forEach((right)=>{
+      observerRight.observe(right);
+    });
 
   },[]);
 
@@ -93,12 +134,14 @@ function HomePage() {
 
                 <div className="what-do-container">
                   <div className="what-do mx-auto">
-                    I've always been interested in the vast capabilities of technology, whether it be gaming, accessibility, or innovation. 
-                    Games can teach people about mental health and problems in the world or simply for enjoyment. 
-                    I love that technology can make people's lives easier through software or engineering. 
-                    I want to create products or services that help people, especially the elderly, where certain things are not as easily accessible.
-                    Creating something that no one thought about before or something that will be the next big thing is fascinating. 
-                    One small idea can turn into something big!
+                  Since I was young, I've been captivated by the limitless possibilities of technology. From gaming to accessibility to innovation, 
+                  I'm endlessly intrigued by how it can impact our lives. Not only can games offer entertainment, 
+                  but they can also educate us about mental health and social issues. Moreover, 
+                  technology can enhance people's daily routines and make life easier through software 
+                  and engineering. Personally, I aspire to develop products and services that assist those
+                  who struggle with accessibility, particularly the elderly. The prospect of conceiving 
+                  an entirely new concept or creating the next big thing is thrilling to me. It's amazing 
+                  to think that one small idea has the potential to grow into something monumental!
                   </div>
                 </div>
               
@@ -106,7 +149,7 @@ function HomePage() {
             
           </section>
 
-          <section className="Projects">
+          <section>
 
               <div className="projects">
                 <h1 className="project-title-section mx-auto">Latest Projects</h1>
@@ -172,8 +215,8 @@ function HomePage() {
                   <li className="project-links hidden mx-auto">
                     <div className="corner-ribbon">
                       <div className="project-container">
-                        <div class="corner-ribbon__inner">
-                            <div class="corner-ribbon__ribbon">
+                        <div className="corner-ribbon__inner">
+                            <div className="corner-ribbon__ribbon">
                               <div className="ribbon-text">
                               Collaborated
                               </div>
@@ -383,9 +426,9 @@ function HomePage() {
         </div>
       </div>
 
-      {/* <section>
+      <section>
         <div className="figma-section">
-          <div className="Figma">
+          <div className="figma">
             <h1>
               Figma
             </h1>
@@ -394,25 +437,98 @@ function HomePage() {
             </h3>
           </div>
 
-          <div className="Figma-Designs">
-              <div className="figma-project">
-                <div className="figma-color">
+          <div className="figma-designs">
 
-                  <div className="figma-preview">
-                    <img src={require("../images/CTP Hackathon.png")}width="400" height="300"></img>
-                  </div>
-                  <div className="figma-project-title">
-                    <div className="figma-link-title">CTP Hackathon</div>
+            <div className="fpw-wrapper">
+              <div className="figma-project-wrapper left">
+                <div className="figma-project">
+                    <div className="figma-preview">
+                      <img className="figma-image" src={require("../images/Nusketch.png")}></img>
+                    </div>
+                    <div className="figma-project-title hide">
+                      <div className="figma-link-title">Nusketch</div>
+                      
                     <div className="figma-icon">
                       <Icon icon="bi:plus" />
                     </div>
-                      
-                  </div>
+                    </div>
                 </div>
               </div>
+            </div>
+
+            <div className="fpw-wrapper">
+              <div className="figma-project-wrapper right">
+                <div className="figma-project">
+                    <div className="figma-preview">
+                      <img className="figma-image" src={require("../images/NusketchLogo.png")}></img>
+                    </div>
+                    <div className="figma-project-title hide">
+                      <div className="figma-link-title">Nusketch Logo</div>
+                      
+                    <div className="figma-icon">
+                      <Icon icon="bi:plus" />
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="fpw-wrapper">
+              <div className="figma-project-wrapper left">
+                <div className="figma-project">
+                    <div className="figma-preview">
+                      <img className="figma-image" src={require("../images/Easy Trader.png")}></img>
+                    </div>
+                    <div className="figma-project-title hide">
+                      <div className="figma-link-title">Easy Trader</div>
+                      
+                    <div className="figma-icon">
+                      <Icon icon="bi:plus" />
+                    </div>
+                    </div>
+                </div>
+              </div> 
+            </div>
+
+            <div className="fpw-wrapper">
+              <div className="figma-project-wrapper right">
+                <div className="figma-project">
+                    <div className="figma-preview">
+                      <img className="figma-image" src={require("../images/CTP Hackathon.png")}></img>
+                    </div>
+                    <div className="figma-project-title hide">
+                      <div className="figma-link-title">CTP Hackathon</div>
+                      
+                    <div className="figma-icon">
+                      <Icon icon="bi:plus" />
+                    </div>
+                    </div>
+                </div>
+              </div> 
+            </div>
+
+            <div className="fpw-wrapper">
+              <div className="figma-project-wrapper left">
+                <div className="figma-project">
+                    <div className="figma-preview">
+                      <img className="figma-image" src={require("../images/StudyMethod.png")}></img>
+                    </div>
+                    <div className="figma-project-title hide">
+                      <div className="figma-link-title">Pomodoro Study Method</div>
+                      
+                    <div className="figma-icon">
+                      <Icon icon="bi:plus" />
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
+
         </div>
-      </section> */}
+      </section>
       </div>
       
   );
