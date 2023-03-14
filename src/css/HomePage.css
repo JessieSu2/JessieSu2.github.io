@@ -73,9 +73,17 @@
 
 .what-do-container{
     padding-top: 5%; 
+    align-items: center;
 }
+
+.what-do-title{
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
 .what-do{
-    width: 50vw;
+    width: vw;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 25px;
     padding: 30px 50px;
@@ -85,10 +93,35 @@
     line-height: 25px;
     /* text-rendering: optimizeLegibility; */
     text-shadow: 0.02em 0 rgb(134, 134, 134);
-
-
     animation: slide-up 4s ease;
+}
 
+.resume-button{
+    padding: 15px;
+    text-align: center;
+}
+
+.button{
+    padding: 5px;
+    border-radius: 50em;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: whitesmoke;
+    text-decoration: none;
+}
+
+.button-href{
+    text-decoration: none;
+    color: black;
+}
+.button-href:hover{
+    color: white;
+}
+
+.button:hover{
+    color: white;
+    text-decoration: none;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .intro-container{
@@ -456,6 +489,7 @@
     }
 
 }
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width:600px){

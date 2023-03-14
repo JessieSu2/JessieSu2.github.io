@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 import { Icon } from '@iconify/react';
 import { useRef, useEffect, useState } from 'react';
 import { hover } from "@testing-library/user-event/dist/hover";
-
+import pdf from "../files/Jessie_Su_Resume.pdf"
 function HomePage() {
 
   // console.log('is visible', isVisible);
@@ -64,9 +64,10 @@ function HomePage() {
         console.log(entry.target);
         if (entry.isIntersecting){
           entry.target.classList.add('left-slide-in');
-        }else{
-          entry.target.classList.remove('left-slide-in');
         }
+        // else{
+        //   entry.target.classList.remove('left-slide-in');
+        // }
       })
     }, );
 
@@ -85,9 +86,10 @@ function HomePage() {
         console.log(entry.target);
         if (entry.isIntersecting){
           entry.target.classList.add('right-slide-in');
-        }else{
-          entry.target.classList.remove('right-slide-in');
         }
+        // else{
+        //   entry.target.classList.remove('right-slide-in');
+        // }
       })
     },);
 
@@ -97,7 +99,6 @@ function HomePage() {
     });
 
   },[]);
-
 
   return (
     // style={{ width: '100%', height: '100%'}}
@@ -133,6 +134,9 @@ function HomePage() {
                 </div>
 
                 <div className="what-do-container">
+                  <div className="what-do-title">
+                   <h2>Why tech?</h2>
+                  </div>
                   <div className="what-do mx-auto">
                   Since I was young, I've been captivated by the limitless possibilities of technology. From gaming to accessibility to innovation, 
                   I'm endlessly intrigued by how it can impact our lives. Not only can games offer entertainment, 
@@ -144,9 +148,17 @@ function HomePage() {
                   to think that one small idea has the potential to grow into something monumental!
                   </div>
                 </div>
-              
+
+                <div className="resume-button">
+                  <button className="button">
+                    <a href={pdf} download target="_blank" className="button-href">  
+                      Resume
+                    </a>
+                  </button>
+                </div>
+
               </div>
-            
+
           </section>
 
           <section>
@@ -426,7 +438,7 @@ function HomePage() {
         </div>
       </div>
 
-      <section>
+      {/* <section>
         <div className="figma-section">
           <div className="figma">
             <h1>
@@ -528,7 +540,7 @@ function HomePage() {
           </div>
 
         </div>
-      </section>
+      </section> */}
       </div>
       
   );
