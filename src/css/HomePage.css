@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura&family=Silkscreen&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css');
-
 .background{
     /* background:  linear-gradient(#64c8e6, #9198e5); */
     /* background: linear-gradient(#461937,#c4a1e4); */
-    background:  linear-gradient(#9198e5,#64c8e6);
+    background-image:  linear-gradient(#9198e5,#64c8e6);
     /* background-color: #121212; */
 
 }
@@ -13,6 +10,13 @@
     background:url(../images/stars.svg);
 }
 /* Intro */
+
+.intro-container{
+    justify-content: center;
+    text-align: center;
+    padding: 0px 30px;
+}
+
 #intro-name{
     text-align: center;
     color:azure;
@@ -67,13 +71,32 @@
 
 .container{
     left:0;
-    padding-top:10%;
+    padding-top: 60px;
     width:100%;
 }
 
+.about-me-container{
+    color: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: slide-up 4s ease;
+}
+
+.about, .about-me-profile, .skills{
+    padding: 15px 0px;
+}
+
+.about-me-text{
+    color: #121212;
+}
+
+.about-me-span{
+    color: azure;
+}
+
 .what-do-container{
-    padding-top: 5%; 
-    align-items: center;
+    animation: slide-up 4s ease;
 }
 
 .what-do-title{
@@ -83,7 +106,9 @@
 }
 
 .what-do{
-    width: vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 25px;
     padding: 30px 50px;
@@ -91,7 +116,6 @@
     letter-spacing: 1px;
     word-spacing: 2px;
     line-height: 25px;
-    /* text-rendering: optimizeLegibility; */
     text-shadow: 0.02em 0 rgb(134, 134, 134);
     animation: slide-up 4s ease;
 }
@@ -99,6 +123,7 @@
 .resume-button{
     padding: 15px;
     text-align: center;
+    animation: slide-up 4s ease;
 }
 
 .button{
@@ -122,10 +147,6 @@
     text-decoration: none;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
-
-.intro-container{
-    padding-bottom: 50vh;
 }
 
 /* Projects */
@@ -497,20 +518,6 @@
         font-size: 70px;
     }
 
-    /* #title{
-        font-size: 15px;
-    } */
-
-    /* .intro-icons{
-        font-size: 2.5em;
-    } */
-
-    .what-do{
-        font-size: 15px;
-        width: 80vw;
-        padding: 20px 30px;
-    }
-    
     .project-links{
         padding: 10px;
     }
@@ -563,17 +570,6 @@
 @media only screen and (min-width: 600px) {
     #name{
         font-size: 85px;
-    }
-    /* #title{
-        font-size: 18px;
-    } */
-
-    /* .intro-icons{
-        font-size: 2.5em;
-    } */
-
-    .what-do{
-        width: 80vw;
     }
     
     .project-links{
@@ -629,19 +625,7 @@
     #name{
         font-size: 90px;
     }
-    /* #title{
-        font-size: 20px;
-    } */
 
-    /* .intro-icons{
-        font-size: 2.8em;
-    } */
-
-    .what-do{
-        width: 85vw;
-        font-size: 15px;
-        line-height: 30px;
-    }
     .project-links{
         padding: 25px 10px;
     }
@@ -713,11 +697,6 @@
         font-size: 22px;
     } */
 
-    .what-do{
-        width: 60vw;
-        line-height: 30px;
-    }
-    
     .project-title-section{
         font-size: 55px;
     }
@@ -753,19 +732,6 @@
 @media only screen and (min-width: 1200px) {
     #name{
         font-size: 100px;
-    }
-/* 
-    #title{
-        font-size: 25px;
-    }
-     */
-    /* .intro-icons{
-        font-size: 3em;
-    } */
-
-    .what-do{
-        font-size: 20px;
-        width: 70vw;
     }
 
     .project-links{
@@ -819,9 +785,6 @@
 
 
 @media only screen and (min-width: 1600px) {
-    .what-do{
-        width: 60vw;
-    }
     
     .project-container{
         width: 700px;
