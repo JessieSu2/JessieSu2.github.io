@@ -1,0 +1,30 @@
+
+.resume-button{
+    padding: 50px;
+    text-align: center;
+    animation: slide-up 4s ease;
+}
+
+.button{
+    padding: 10px 15px;
+    border-radius: 50em;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: whitesmoke;
+    text-decoration: none;
+}
+
+.button-href{
+    text-decoration: none;
+    color: black;
+}
+.button-href:hover{
+    color: white;
+}
+
+.button:hover{
+    color: white;
+    text-decoration: none;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+

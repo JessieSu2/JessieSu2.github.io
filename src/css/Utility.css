@@ -1,0 +1,132 @@
+
+
+/* Utility classes */
+
+.bob:hover{
+    color: rgb(71, 43, 172);
+    -webkit-animation-name: bob-float, bob;
+    animation-name: bob-float,bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+}
+
+.youtube:hover{
+    color: red;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1.5s ease-in;
+}
+.show{
+    opacity: 1;
+}
+.slide-up{
+    animation: slide-up 2s ease-in;
+}
+
+.left-slide-in{
+    animation: left-slide-in 2s ease-in;
+
+}
+
+.right-slide-in{
+    animation: right-slide-in 2s ease-in;
+}
+
+
+@keyframes left-slide-in{
+    0%{
+        transform: translateX(-125px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes right-slide-in{
+    0%{
+        transform: translateX(125px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
+}
+
+@keyframes slide-up{
+    /* from{
+        opacity: 0.2;
+    }
+    to{
+        opacity: 1;
+    } */
+    0%{
+        transform: translateY(50px);
+        opacity: 0.2;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@-webkit-keyframes bob{
+    0%{
+        -webkit-transform:translateY(-8px);
+        transform: translateY(-8px);
+    }
+    50%{
+        -webkit-transform:translateY(-2px);
+        transform: translateY(-2px);
+    }
+    100%{
+        -webkit-transform:translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes bob{
+    0%{
+        -webkit-transform:translateY(-8px);
+        transform: translateY(-8px);
+    }
+    50%{
+        -webkit-transform:translateY(-2px);
+        transform: translateY(-2px);
+    }
+    100%{
+        -webkit-transform:translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+
+@-webkit-keyframes bob-float{
+    100%{
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes bob-float{
+    100%{
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+}

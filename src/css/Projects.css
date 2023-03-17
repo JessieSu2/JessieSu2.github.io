@@ -1,0 +1,144 @@
+/* Projects */
+.projects{
+    /* width: 100%; */
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.project-title-section{
+    padding-top: 5%;
+    /* color: azure; */
+}
+
+
+.project-links-ul{
+    max-width: 1000px;
+    column-count: auto;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.project-links{
+    list-style: none;
+    /* padding: 40px; */
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 15px;
+}
+.projects-title{
+    font-size: 35px;
+    padding: 0px 15px;
+}
+
+
+.project-container{    
+    font-family: 'Jura';
+    border-radius: 50px;
+    padding: 50px;
+    max-width: 450px;
+    height: 450px;
+    background-color: rgb(255,255,255,0.25);
+    position: relative;
+    
+}
+
+.project-container .title-icon-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.project-description{
+    text-align: justify;
+    font-family: "Jura";
+}
+
+.projects-icon{
+    font-size: 3em;
+    color: azure;
+    -webkit-transform: perspective(1px), translateZ(0);
+    transform: perspective(1px) translateZ(0);
+}
+
+.project-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+}
+
+/* Bubbles */
+
+.every-bubble{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-bottom: 30px;
+    display:inline-block;
+    width: 400px;
+}
+
+
+.bubble-container{
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+}
+
+.bubble{
+    padding: 5px 10px;
+    background-color: #121212;
+    width: fit-content;
+    border-radius: 50em;
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
+.corner-ribbon {
+    position: relative;
+}
+
+.corner-ribbon__inner {
+    /* Displayed at the top left corner */
+    left: 0px;
+    position: absolute;
+    top: 0px;
+
+    /* Size */
+    height: 10em;
+    width: 10em;
+
+    /* Hide the part of its children which is displayed outside */
+    overflow: hidden;
+}
+
+.corner-ribbon__ribbon {
+    /* Position */
+    left: 0em;
+    position: absolute;
+    top: 3em;
+
+    /* Size */
+    height: 1.5em;
+    width: 12em;
+
+    /* Displayed diagonally */
+    transform: translate(-38px, -8px) rotate(-45deg);
+
+    /* Background color */
+    background-color: #adfab4;
+
+    /* Centerize the text content */
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* font-size: 11.5px; */
+    font-weight: bold;
+    letter-spacing: 2px;
+}

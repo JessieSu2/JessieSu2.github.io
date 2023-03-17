@@ -1,11 +1,12 @@
 import React from "react";
 import '../css/HomePage.css';
-import stars from '../images/stars.svg';
 import NavBar from "./NavBar";
 import { Icon } from '@iconify/react';
-import { useRef, useEffect, useState } from 'react';
-import { hover } from "@testing-library/user-event/dist/hover";
-import pdf from "../files/Jessie_Su_Resume.pdf"
+import { useEffect,  } from 'react';
+import pdf from "../files/Jessie_Su_Resume.pdf";
+import "../css/Master.css";
+
+
 function HomePage() {
 
   // console.log('is visible', isVisible);
@@ -17,7 +18,7 @@ function HomePage() {
 
 
   useEffect(() => {
-    const sections = document.querySelectorAll(".project-links.mx-auto");
+    const sections = document.querySelectorAll(".project-links");
     console.log(sections);
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -138,8 +139,8 @@ function HomePage() {
 
                 <div className="about-me">
                   <div className="about">
-                    <h2>About</h2>
-                    <h1>Let me introduce myself</h1>
+                    <h2 className="about-title">About</h2>
+                    <h1 className= "title-prompt">Let me introduce myself</h1>
                    
                     <div className="about-me-text"> I'm a computer science major from City College of New York, graduating in Spring 2023. I'm passionate about software design and development, with experience in game, web, and mobile app development. I am thrilled to continue exploring the possibilities of computer science, and I am always eager to learn and take on new challenges.</div>
                   </div>
@@ -157,6 +158,9 @@ function HomePage() {
                   <div className="skills">
                     <h2>Skills</h2>
                     <div className="about-me-text">Having strong soft skills, I am able to work effectively in a team and deliver high-quality results. With my combination of technical and soft skills, I am confident in my ability to tackle any challenge and create meaningful solutions that make a difference.</div>
+                    <div className="technical-skills">
+                      HTML, CSS, C++, Python, MySql, JavaScript, 
+                    </div>
                   </div>
                 </div>
 
@@ -164,8 +168,8 @@ function HomePage() {
 
               <div className="what-do-container">
                 <div className="what-do-title">
-                  <h2>Why tech?</h2>
-                  <h1>What got me into technology</h1>
+                  <h2 className="about-title">Why tech?</h2>
+                  <h1 className= "title-prompt">What got me into technology</h1>
                 </div>
                 <div className="what-do">
                   Since I was young, I've been captivated by the limitless possibilities of technology. From gaming to accessibility to innovation,
@@ -194,10 +198,11 @@ function HomePage() {
           <section>
 
             <div className="projects">
-              <h1 className="project-title-section mx-auto">Latest Projects</h1>
+              <h2 className="project-title-section about-title">Latest Projects</h2>
+              <h1 className= "title-prompt">Some projects I have done</h1>
               <ul className="project-links-ul">
 
-                <li className="project-links hidden mx-auto">
+                <li className="project-links hidden">
                   <div className="corner-ribbon">
 
                     <div className="project-container">
@@ -254,7 +259,7 @@ function HomePage() {
                   </div>
                 </li>
 
-                <li className="project-links hidden mx-auto">
+                <li className="project-links hidden">
                   <div className="corner-ribbon">
                     <div className="project-container">
                       <div className="corner-ribbon__inner">
@@ -307,7 +312,7 @@ function HomePage() {
                   </div>
                 </li>
 
-                <li className="project-links hidden mx-auto">
+                <li className="project-links hidden">
                   <div className="project-container">
                     <div className="title-icon-container">
                       <div className="projects-title">Coffee Run</div>
@@ -340,7 +345,7 @@ function HomePage() {
 
                 </li>
 
-                <li className="project-links hidden mx-auto">
+                <li className="project-links hidden">
                   <div className="project-container">
                     <div className="title-icon-container">
                       <div className="projects-title">Magical Walk</div>
@@ -373,7 +378,7 @@ function HomePage() {
 
                 </li>
 
-                <li className="project-links hidden mx-auto">
+                <li className="project-links hidden">
                   <div className="corner-ribbon">
                     <div className="project-container">
                       <div className="corner-ribbon__inner">
@@ -421,7 +426,7 @@ function HomePage() {
                   </div>
                 </li>
 
-                <li className="project-links hidden mx-auto">
+                <li className="project-links hidden">
                   <div className="corner-ribbon">
                     <div className="project-container">
                       <div className="corner-ribbon__inner">
