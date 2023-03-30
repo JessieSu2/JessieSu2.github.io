@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.edd9b57f.css",
-    "main.js": "/static/js/main.84c76116.js",
+    "main.css": "/static/css/main.e8065347.css",
+    "main.js": "/static/js/main.a4fd50a7.js",
     "static/js/787.68dbee1e.chunk.js": "/static/js/787.68dbee1e.chunk.js",
+    "static/media/StudyMethod.png": "/static/media/StudyMethod.80ef8128c0a48141057b.png",
+    "static/media/Easy Trader.png": "/static/media/Easy Trader.a32cff90d056c1ca2cd8.png",
+    "static/media/NusketchLogo.png": "/static/media/NusketchLogo.d65c6eafefaf7a716415.png",
+    "static/media/CTP Hackathon.png": "/static/media/CTP Hackathon.d0b5dc712caebce6bbab.png",
     "static/media/Jessie_Su_Resume.pdf": "/static/media/Jessie_Su_Resume.70e320aaeb419b47ee66.pdf",
     "static/media/stars.svg": "/static/media/stars.9e9d9712c6e3673ab5b3.svg",
+    "static/media/Nusketch.png": "/static/media/Nusketch.475c4eba765798fd1c39.png",
     "index.html": "/index.html",
-    "main.edd9b57f.css.map": "/static/css/main.edd9b57f.css.map",
-    "main.84c76116.js.map": "/static/js/main.84c76116.js.map",
+    "main.e8065347.css.map": "/static/css/main.e8065347.css.map",
+    "main.a4fd50a7.js.map": "/static/js/main.a4fd50a7.js.map",
     "787.68dbee1e.chunk.js.map": "/static/js/787.68dbee1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edd9b57f.css",
-    "static/js/main.84c76116.js"
+    "static/css/main.e8065347.css",
+    "static/js/main.a4fd50a7.js"
   ]
 }
