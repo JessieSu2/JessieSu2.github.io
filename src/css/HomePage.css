@@ -5,6 +5,10 @@
   /* background-color: #121212; */
 }
 
+.background-2 {
+  background-image: linear-gradient(#86daf4, #0aa0ab);
+}
+
 .background-image {
   background: url(../images/stars.svg);
 }
@@ -15,8 +19,9 @@
 
 /* Figma */
 .figma-section {
-  background-color: #f3f4f8;
-  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .figma {
@@ -50,6 +55,9 @@
   align-items: center;
   background-color: black;
   overflow: hidden;
+}
+.figma-project:hover {
+  cursor: pointer;
 }
 
 .figma-image {

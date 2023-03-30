@@ -1,89 +1,90 @@
 /* Intro */
-.intro-container{
-    justify-content: center;
-    text-align: center;
-    padding: 0px 30px;
+.intro-container {
+  justify-content: center;
+  text-align: center;
+  padding: 0px 30px;
 }
 
-#intro-name{
-    text-align: center;
-    color:azure;
-    animation-name: rotate;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
+#intro-name {
+  text-align: center;
+  color: azure;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
 }
 
-
-#name{
-    text-align: center;
-    font-size: 100px;
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 100px;
-    color: azure;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
-    backdrop-filter: blur(1px);
-    animation: slide-up 1.5s ease;
-    
+#name {
+  text-align: center;
+  font-size: 100px;
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  color: azure;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(1px);
+  animation: slide-up 1.5s ease;
 }
 
-#title{
-    text-align: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(1px);
-    color: white;
-    animation: slide-up 2.5s ease;
+#title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(1px);
+  color: white;
+  animation: slide-up 2.5s ease;
 }
 
-#icons{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding: 10px;
-    animation: slide-up 3s ease;
+#icons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  animation: slide-up 3s ease;
 }
 
-.intro-icons{
-    color: azure;
-    font-size: 2em;
+.intro-icons {
+  color: azure;
+  font-size: 2em;
 }
 
-.icon-spacing{
-    padding:10px;
+.icon-spacing {
+  padding: 10px;
 }
 
-.container{
-    left:0;
-    padding: 60px;
-    width:100%;
+.container {
+  left: 0;
+  padding: 60px;
+  width: 100%;
 }
 
-.about-me-container{
-    color: white;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    animation: slide-up 4s ease;
+.about-me-container {
+  color: white;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: slide-up 4s ease;
 }
 
-.about, .about-me-profile, .skills{
-    padding: 15px 0px;
+.about,
+.about-me-profile,
+.skills {
+  padding: 15px 0px;
 }
 
-.about-me-text{
-    color: #121212;
+.about-me-text {
+  color: #121212;
 }
 
-.about-me-span{
-    color: azure;
+.about-me-span {
+  color: rgb(255, 255, 255);
+  text-shadow: #121212 1px 0 10px;
+  text-decoration: underline;
 }
 
-.about-title{
-    color: rgb(71, 43, 172);
+.about-title {
+  color: rgb(71, 43, 172);
 }
-

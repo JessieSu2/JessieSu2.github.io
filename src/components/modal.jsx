@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Icon } from "@iconify/react";
-import "../css/Master.css";
 function Example(props) {
   const { title, description, wireframe, prototype } = props;
   return (
@@ -10,7 +9,7 @@ function Example(props) {
       {...props}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
-      centered
+      centered="Modal-background"
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">{title}</Modal.Title>
@@ -22,9 +21,13 @@ function Example(props) {
           Wireframe
         </a>
         <br></br>
-        <a href={prototype} target="_blank">
-          Prototype
-        </a>
+        {prototype ? (
+          <a href={prototype} target="_blank">
+            Prototype
+          </a>
+        ) : (
+          <></>
+        )}
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>

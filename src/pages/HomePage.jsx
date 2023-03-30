@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 import { useEffect } from "react";
 import pdf from "../files/Jessie_Su_Resume.pdf";
 import "../css/Master.css";
-import Example from "../components/modal";
+import Modal from "../components/modal";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
 function HomePage() {
@@ -159,8 +159,7 @@ function HomePage() {
                     <h2 className="about-title">About</h2>
                     <h1 className="title-prompt">Let me introduce myself</h1>
 
-                    <div className="about-me-text">
-                      {" "}
+                    <div className="about-me-text what-do">
                       I'm a computer science major from City College of New
                       York, graduating in Spring 2023. I'm passionate about
                       software design and development, with experience in game,
@@ -172,7 +171,7 @@ function HomePage() {
 
                   <div className="about-me-profile">
                     <h2>Profile</h2>
-                    <div className="about-me-text">
+                    <div className="about-me-text what-do">
                       I am currently searching for a full-time position and I am
                       open to exploring opportunities in software engineering,
                       product ownership, startups, or any other roles that allow
@@ -189,15 +188,15 @@ function HomePage() {
                 <div>
                   <div className="skills">
                     <h2>Skills</h2>
-                    <div className="about-me-text">
+                    <div className="about-me-text what-do">
                       Having strong soft skills, I am able to work effectively
                       in a team and deliver high-quality results. With my
                       combination of technical and soft skills, I am confident
                       in my ability to tackle any challenge and create
                       meaningful solutions that make a difference.
-                    </div>
-                    <div className="technical-skills">
-                      HTML, CSS, C++, Python, MySql, JavaScript,
+                      <div className="technical-skills">
+                        HTML, CSS, C++, Python, MySql, JavaScript,
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -245,7 +244,9 @@ function HomePage() {
               <h2 className="project-title-section about-title">
                 Latest Projects
               </h2>
-              <h1 className="title-prompt">Some projects I have done</h1>
+              <h1 className="title-prompt slide-up">
+                Some projects I have done
+              </h1>
               <ul className="project-links-ul">
                 <li className="project-links hidden">
                   <div className="corner-ribbon">
@@ -573,165 +574,177 @@ function HomePage() {
               </ul>
             </div>
           </section>
+          <section>
+            <div className="figma-section">
+              <div className="figma">
+                <h1 className="about-title">Figma</h1>
+                <h3 className="title-prompt">Some designs I made with figma</h3>
+              </div>
+
+              <div className="figma-designs">
+                <div className="fpw-wrapper">
+                  <div className="figma-project-wrapper left">
+                    <div className="figma-project">
+                      <div className="figma-preview">
+                        <img
+                          className="figma-image"
+                          src={require("../images/Nusketch.png")}
+                        ></img>
+                      </div>
+                      <div className="figma-project-title hide">
+                        <div className="figma-link-title">Nusketch</div>
+
+                        <div
+                          className="figma-icon"
+                          onClick={() => setShowNusketch(true)}
+                        >
+                          <Icon icon="bi:plus" />
+                        </div>
+
+                        <Modal
+                          show={showNusketch}
+                          onHide={() => setShowNusketch(false)}
+                          title="Nusketch"
+                          description="An application that simplifies the creation of visual aids making pencil-esque sketches and allows for inlcusive job training and learning for the workforce through visual aids."
+                          wireframe="https://www.figma.com/file/xwULaRKxopyPXphfAFFuzL/Nusketch?node-id=409%3A74&t=NpzlFSeNIXeOGDUV-1"
+                          prototype="https://www.figma.com/proto/xwULaRKxopyPXphfAFFuzL/Nusketch?node-id=409-75&scaling=scale-down&page-id=409%3A74&starting-point-node-id=409%3A75"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="fpw-wrapper">
+                  <div className="figma-project-wrapper right">
+                    <div className="figma-project">
+                      <div className="figma-preview">
+                        <img
+                          className="figma-image"
+                          src={require("../images/NusketchLogo.png")}
+                        ></img>
+                      </div>
+                      <div className="figma-project-title hide">
+                        <div className="figma-link-title">Nusketch Logo</div>
+
+                        <div
+                          className="figma-icon"
+                          onClick={() => setShowNuLogo(true)}
+                        >
+                          <Icon icon="bi:plus" />
+                        </div>
+
+                        <Modal
+                          show={showNuLogo}
+                          onHide={() => setShowNuLogo(false)}
+                          title="Nusketch Logo"
+                          description="App Icon"
+                          wireframe="https://www.figma.com/file/PkHQKUjGHTpyaPfivN38bH/Nusketch-Logo?node-id=0%3A1&t=o6aPLBWTr5a4jGwt-1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="fpw-wrapper">
+                  <div className="figma-project-wrapper left">
+                    <div className="figma-project">
+                      <div className="figma-preview">
+                        <img
+                          className="figma-image"
+                          src={require("../images/Easy Trader.png")}
+                        ></img>
+                      </div>
+                      <div className="figma-project-title hide">
+                        <div className="figma-link-title">Easy Trader</div>
+
+                        <div
+                          className="figma-icon"
+                          onClick={() => setShowET(true)}
+                        >
+                          <Icon icon="bi:plus" />
+                        </div>
+
+                        <Modal
+                          show={showET}
+                          onHide={() => setShowET(false)}
+                          title="Easy Trader"
+                          description="Log in and sign up pages "
+                          wireframe="https://www.figma.com/file/d0ftTkBB0bVm7p2rjrXJjm/Easy-Trader?t=o6aPLBWTr5a4jGwt-1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="fpw-wrapper">
+                  <div className="figma-project-wrapper right">
+                    <div className="figma-project">
+                      <div className="figma-preview">
+                        <img
+                          className="figma-image"
+                          src={require("../images/CTP Hackathon.png")}
+                        ></img>
+                      </div>
+                      <div className="figma-project-title hide">
+                        <div className="figma-link-title">CTP Hackathon</div>
+
+                        <div
+                          className="figma-icon"
+                          onClick={() => setShowCTP(true)}
+                        >
+                          <Icon icon="bi:plus" />
+                        </div>
+
+                        <Modal
+                          show={showCTP}
+                          onHide={() => setShowCTP(false)}
+                          title="Cuny Tech Prep Hackathon"
+                          description="A tracker for medicine intake"
+                          wireframe="https://www.figma.com/file/rYblFoGeNhgOz3BIH6mjKj/CTP-hackathon?t=o6aPLBWTr5a4jGwt-1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="fpw-wrapper">
+                  <div className="figma-project-wrapper left">
+                    <div className="figma-project">
+                      <div className="figma-preview">
+                        <img
+                          className="figma-image"
+                          src={require("../images/StudyMethod.png")}
+                        ></img>
+                      </div>
+                      <div className="figma-project-title hide">
+                        <div className="figma-link-title">
+                          Pomodoro Study Method
+                        </div>
+
+                        <div
+                          className="figma-icon"
+                          onClick={() => setShowPDS(true)}
+                        >
+                          <Icon icon="bi:plus" />
+                        </div>
+
+                        <Modal
+                          show={showPDS}
+                          onHide={() => setShowPDS(false)}
+                          title="Pomodoro Study Method"
+                          description="Studying website"
+                          wireframe="https://www.figma.com/file/6lORdHCXozE9hKImpkBEbA/Pomodoro-Study-Method?t=o6aPLBWTr5a4jGwt-1"
+                          prototype="https://www.figma.com/proto/6lORdHCXozE9hKImpkBEbA/Pomodoro-Study-Method?scaling=contain&page-id=0%3A1&starting-point-node-id=5%3A40&node-id=5-40"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-
-      <section>
-        <div className="figma-section">
-          <div className="figma">
-            <h1>Figma</h1>
-            <h3>Some designs I made with figma</h3>
-          </div>
-
-          <div className="figma-designs">
-            <div className="fpw-wrapper">
-              <div className="figma-project-wrapper left">
-                <div className="figma-project">
-                  <div className="figma-preview">
-                    <img
-                      className="figma-image"
-                      src={require("../images/Nusketch.png")}
-                    ></img>
-                  </div>
-                  <div className="figma-project-title hide">
-                    <div className="figma-link-title">Nusketch</div>
-
-                    <div
-                      className="figma-icon"
-                      onClick={() => setShowNusketch(true)}
-                    >
-                      <Icon icon="bi:plus" />
-                    </div>
-
-                    <Example
-                      show={showNusketch}
-                      onHide={() => setShowNusketch(false)}
-                      title="Nusketch"
-                      description="An application that simplifies the creation of visual aids making pencil-esque sketches and allows for inlcusive job training and learning for the workforce through visual aids."
-                      wireframe="https://www.figma.com/file/xwULaRKxopyPXphfAFFuzL/Nusketch?node-id=409%3A74&t=NpzlFSeNIXeOGDUV-1"
-                      prototype="https://www.figma.com/proto/xwULaRKxopyPXphfAFFuzL/Nusketch?node-id=409-75&scaling=scale-down&page-id=409%3A74&starting-point-node-id=409%3A75"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="fpw-wrapper">
-              <div className="figma-project-wrapper right">
-                <div className="figma-project">
-                  <div className="figma-preview">
-                    <img
-                      className="figma-image"
-                      src={require("../images/NusketchLogo.png")}
-                    ></img>
-                  </div>
-                  <div className="figma-project-title hide">
-                    <div className="figma-link-title">Nusketch Logo</div>
-
-                    <div
-                      className="figma-icon"
-                      onClick={() => setShowNuLogo(true)}
-                    >
-                      <Icon icon="bi:plus" />
-                    </div>
-
-                    <Example
-                      show={showNuLogo}
-                      onHide={() => setShowNuLogo(false)}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="fpw-wrapper">
-              <div className="figma-project-wrapper left">
-                <div className="figma-project">
-                  <div className="figma-preview">
-                    <img
-                      className="figma-image"
-                      src={require("../images/Easy Trader.png")}
-                    ></img>
-                  </div>
-                  <div className="figma-project-title hide">
-                    <div className="figma-link-title">Easy Trader</div>
-
-                    <div className="figma-icon" onClick={() => setShowET(true)}>
-                      <Icon icon="bi:plus" />
-                    </div>
-
-                    <Example
-                      show={showET}
-                      onHide={() => setShowET(false)}
-                      title="Easy Trader"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="fpw-wrapper">
-              <div className="figma-project-wrapper right">
-                <div className="figma-project">
-                  <div className="figma-preview">
-                    <img
-                      className="figma-image"
-                      src={require("../images/CTP Hackathon.png")}
-                    ></img>
-                  </div>
-                  <div className="figma-project-title hide">
-                    <div className="figma-link-title">CTP Hackathon</div>
-
-                    <div
-                      className="figma-icon"
-                      onClick={() => setShowCTP(true)}
-                    >
-                      <Icon icon="bi:plus" />
-                    </div>
-
-                    <Example
-                      show={showCTP}
-                      onHide={() => setShowCTP(false)}
-                      title="Cuny Tech Prep Hackathon"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="fpw-wrapper">
-              <div className="figma-project-wrapper left">
-                <div className="figma-project">
-                  <div className="figma-preview">
-                    <img
-                      className="figma-image"
-                      src={require("../images/StudyMethod.png")}
-                    ></img>
-                  </div>
-                  <div className="figma-project-title hide">
-                    <div className="figma-link-title">
-                      Pomodoro Study Method
-                    </div>
-
-                    <div
-                      className="figma-icon"
-                      onClick={() => setShowPDS(true)}
-                    >
-                      <Icon icon="bi:plus" />
-                    </div>
-
-                    <Example
-                      show={showPDS}
-                      onHide={() => setShowPDS(false)}
-                      title="Pomodoro Study Method"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
